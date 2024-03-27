@@ -38,7 +38,6 @@ class SimController:
     def simulate(self) -> None:
         while self.futureEvents[0].due <= self.stop:
             upcomingEvent = self.futureEvents.pop(0)
-
             self.clock = upcomingEvent.due
 
             upcomingEvent.trigger()
