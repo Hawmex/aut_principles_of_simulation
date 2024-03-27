@@ -1,3 +1,7 @@
+# Principles of Simulation
+#
+# By Hamed Araab & Shahriar Khalvati
+
 import random
 from typing import *
 
