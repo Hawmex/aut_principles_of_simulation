@@ -84,6 +84,7 @@ class SimController:
         Args:
         - event (SimEvent): The event to be dispatched.
         """
+
         event.due = self.clock + event.interval
         event.controller = self
 
