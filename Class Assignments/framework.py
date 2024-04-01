@@ -12,7 +12,7 @@ class SimEvent[T: SimController]:
 
     Attributes:
     - interval (float): The time interval until the event triggers.
-    - due (float): The time when the event is due to be triggered.
+    - dueTime (float): The time when the event is due to be triggered.
     - controller (SimController): The controller associated with the event.
     """
 
@@ -29,7 +29,7 @@ class SimEvent[T: SimController]:
 
         assert interval >= 0, "Negative interval"
 
-        self.due: float
+        self.dueTime: float
         self.controller: T
 
         self.interval = interval
@@ -51,28 +51,28 @@ class SimController:
     Attributes:
     - futureEvents (List[SimEvent]): A list of future events.
     - clock (float): The current simulation time.
-    - stop (float): The time at which the simulation should stop.
+    - stopTime (float): The time at which the simulation should stop.
     """
 
-    def __init__(self, initialEvent: SimEvent, stop: float) -> None:
+    def __init__(self, initialEvent: SimEvent, stopTime: float) -> None:
         """
         Initialize the SimController with an initial event and a stop time.
 
         Args:
         - initialEvent (SimEvent): The initial event to start the simulation.
-        - stop (float): The time at which the simulation should stop.
+        - stopTime (float): The time at which the simulation should stop.
 
         Raises:
         - AssertionError: If the initial event's interval is non-zero or if the stop time is non-positive.
         """
 
         assert initialEvent.interval == 0, "Non-zero interval for the initial event"
-        assert stop > 0, "Non-positive stop time"
+        assert stopTime > 0, "Non-positive stop time"
 
         self.futureEvents: List[SimEvent] = []
         self.clock: float = 0
 
-        self.stop = stop
+        self.stopTime = stopTime
 
         self.dispatchEvent(initialEvent)
 
@@ -84,20 +84,20 @@ class SimController:
         - event (SimEvent): The event to be dispatched.
         """
 
-        event.due = self.clock + event.interval
+        event.dueTime = self.clock + event.interval
         event.controller = self
 
         self.futureEvents.append(event)
-        self.futureEvents.sort(key=lambda event: event.due)
+        self.futureEvents.sort(key=lambda event: event.dueTime)
 
     def simulate(self) -> None:
         """
         Run the simulation until the stop time is reached.
         """
 
-        while self.futureEvents[0].due <= self.stop:
+        while self.futureEvents[0].dueTime <= self.stopTime:
             upcomingEvent = self.futureEvents.pop(0)
-            self.clock = upcomingEvent.due
+            self.clock = upcomingEvent.dueTime
 
             upcomingEvent.trigger()
 
