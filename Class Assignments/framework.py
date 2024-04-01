@@ -69,13 +69,12 @@ class SimController:
         assert initialEvent.interval == 0, "Non-zero interval for the initial event"
         assert stop > 0, "Non-positive stop time"
 
-        initialEvent.due = 0
-        initialEvent.controller = self
-
-        self.futureEvents: List[SimEvent] = [initialEvent]
+        self.futureEvents: List[SimEvent] = []
         self.clock: float = 0
 
         self.stop = stop
+
+        self.dispatchEvent(initialEvent)
 
     def dispatchEvent(self, event: SimEvent) -> None:
         """
