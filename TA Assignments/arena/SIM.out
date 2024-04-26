@@ -1,0 +1,2467 @@
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 1 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             46.646     1.2535     20.419     106.03       1438    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1438    
+Customer.WaitTime                           6937.7     (Corr)     .00000     14094.       1438    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1438    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1438    
+Customer.TotalTime                          6984.3     (Corr)     34.695     14171.       1438    
+ChatGPT.Queue.WaitingTime                   .04380     .02479     .00000     10.482       2067    
+Payment.Queue.WaitingTime                   6914.9     (Corr)     .00000     14104.       1439    
+DALL.E.Queue.WaitingTime                    136.97     (Corr)     .00000     549.37        891    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                728.57     (Corr)     .00000     1536.0     1536.0    
+ChatGPT Server.NumberBusy                   .89445     .04967     .00000     4.0000     .00000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .22361     .01242     .00000     1.0000     .00000    
+Payment Server.NumberBusy                   .99923     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99923     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.8303     (Insuf)    .00000     2.0000     2.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .91519     (Insuf)    .00000     1.0000     1.0000    
+ChatGPT.Queue.NumberInQueue                 .00314     (Insuf)    .00000     3.0000     .00000    
+Payment.Queue.NumberInQueue                 720.48     (Corr)     .00000     1517.0     1517.0    
+DALL.E.Queue.NumberInQueue                  4.3650     (Corr)     .00000     18.000     16.000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2974.0    
+Customer.NumberOut                          1438.0    
+ChatGPT Server.NumberSeized                 2067.0    
+ChatGPT Server.ScheduledUtilization         .22361    
+Payment Server.NumberSeized                 1439.0    
+Payment Server.ScheduledUtilization         .99923    
+DALL.E Server.NumberSeized                  891.00    
+DALL.E Server.ScheduledUtilization          .91519    
+System.NumberOut                            1438.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 2 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             46.377     .98818     20.481     115.19       1437    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1437    
+Customer.WaitTime                           7015.9     (Corr)     .00000     14215.       1437    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1437    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1437    
+Customer.TotalTime                          7062.3     (Corr)     28.021     14305.       1437    
+ChatGPT.Queue.WaitingTime                   .06233     .04135     .00000     9.7966       2050    
+Payment.Queue.WaitingTime                   7006.2     (Corr)     .00000     14071.       1438    
+DALL.E.Queue.WaitingTime                    72.247     (Corr)     .00000     324.87        839    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                705.87     (Corr)     .00000     1457.0     1456.0    
+ChatGPT Server.NumberBusy                   .91063     .04943     .00000     4.0000     1.0000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .22766     .01236     .00000     1.0000     .25000    
+Payment Server.NumberBusy                   .99778     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99778     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.7413     .08599     .00000     2.0000     2.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .87065     .04300     .00000     1.0000     1.0000    
+ChatGPT.Queue.NumberInQueue                 .00444     (Insuf)    .00000     3.0000     .00000    
+Payment.Queue.NumberInQueue                 700.10     (Corr)     .00000     1450.0     1448.0    
+DALL.E.Queue.NumberInQueue                  2.1128     (Corr)     .00000     11.000     4.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2893.0    
+Customer.NumberOut                          1437.0    
+ChatGPT Server.NumberSeized                 2050.0    
+ChatGPT Server.ScheduledUtilization         .22766    
+Payment Server.NumberSeized                 1438.0    
+Payment Server.ScheduledUtilization         .99778    
+DALL.E Server.NumberSeized                  839.00    
+DALL.E Server.ScheduledUtilization          .87065    
+System.NumberOut                            1437.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 3 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             47.141     .79424     20.446     108.02       1439    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1439    
+Customer.WaitTime                           7049.4     (Corr)     .00000     14563.       1439    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1439    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1439    
+Customer.TotalTime                          7096.5     (Corr)     29.772     14671.       1439    
+ChatGPT.Queue.WaitingTime                   .04233     .03436     .00000     12.753       2006    
+Payment.Queue.WaitingTime                   7024.1     (Corr)     .00000     14387.       1440    
+DALL.E.Queue.WaitingTime                    68.529     (Corr)     .00000     332.12        817    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                708.77     (Corr)     .00000     1387.0     1386.0    
+ChatGPT Server.NumberBusy                   .88704     .05237     .00000     4.0000     .00000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .22176     .01309     .00000     1.0000     .00000    
+Payment Server.NumberBusy                   .99947     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99947     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.6844     (Corr)     .00000     2.0000     2.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .84224     (Corr)     .00000     1.0000     1.0000    
+ChatGPT.Queue.NumberInQueue                 .00295     (Insuf)    .00000     2.0000     .00000    
+Payment.Queue.NumberInQueue                 703.25     (Corr)     .00000     1382.0     1381.0    
+DALL.E.Queue.NumberInQueue                  1.9458     (Corr)     .00000     12.000     2.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2825.0    
+Customer.NumberOut                          1439.0    
+ChatGPT Server.NumberSeized                 2006.0    
+ChatGPT Server.ScheduledUtilization         .22176    
+Payment Server.NumberSeized                 1440.0    
+Payment Server.ScheduledUtilization         .99947    
+DALL.E Server.NumberSeized                  817.00    
+DALL.E Server.ScheduledUtilization          .84224    
+System.NumberOut                            1439.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 4 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             46.127     1.1334     20.831     103.83       1438    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1438    
+Customer.WaitTime                           6961.1     (Corr)     .00000     14131.       1438    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1438    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1438    
+Customer.TotalTime                          7007.2     (Corr)     31.001     14223.       1438    
+ChatGPT.Queue.WaitingTime                   .04537     .03160     .00000     10.049       2042    
+Payment.Queue.WaitingTime                   6937.3     (Corr)     .00000     14048.       1439    
+DALL.E.Queue.WaitingTime                    352.69     (Corr)     .00000     1095.6        897    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                719.14     (Corr)     .00000     1537.0     1537.0    
+ChatGPT Server.NumberBusy                   .88092     .05799     .00000     4.0000     .00000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .22023     .01450     .00000     1.0000     .00000    
+Payment Server.NumberBusy                   .99925     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99925     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.8494     (Insuf)    .00000     2.0000     2.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .92472     (Insuf)    .00000     1.0000     1.0000    
+ChatGPT.Queue.NumberInQueue                 .00322     (Insuf)    .00000     2.0000     .00000    
+Payment.Queue.NumberInQueue                 703.75     (Corr)     .00000     1498.0     1498.0    
+DALL.E.Queue.NumberInQueue                  11.655     (Corr)     .00000     38.000     36.000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2975.0    
+Customer.NumberOut                          1438.0    
+ChatGPT Server.NumberSeized                 2042.0    
+ChatGPT Server.ScheduledUtilization         .22023    
+Payment Server.NumberSeized                 1439.0    
+Payment Server.ScheduledUtilization         .99925    
+DALL.E Server.NumberSeized                  897.00    
+DALL.E Server.ScheduledUtilization          .92472    
+System.NumberOut                            1438.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 5 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             46.056     1.0172     20.731     111.28       1439    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1439    
+Customer.WaitTime                           7275.6     (Corr)     .00000     14897.       1439    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1439    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1439    
+Customer.TotalTime                          7321.6     (Corr)     25.343     14960.       1439    
+ChatGPT.Queue.WaitingTime                   .05007     .03054     .00000     10.846       2110    
+Payment.Queue.WaitingTime                   7253.3     (Corr)     .00000     14743.       1440    
+DALL.E.Queue.WaitingTime                    126.03     (Corr)     .00000     440.14        869    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                758.46     (Corr)     .00000     1540.0     1540.0    
+ChatGPT Server.NumberBusy                   .89091     .04321     .00000     4.0000     .00000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .22273     .01080     .00000     1.0000     .00000    
+Payment Server.NumberBusy                   .99962     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99962     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.8148     (Insuf)    .00000     2.0000     1.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .90740     (Insuf)    .00000     1.0000     .50000    
+ChatGPT.Queue.NumberInQueue                 .00367     (Insuf)    .00000     2.0000     .00000    
+Payment.Queue.NumberInQueue                 750.95     (Corr)     .00000     1538.0     1538.0    
+DALL.E.Queue.NumberInQueue                  3.8029     (Corr)     .00000     16.000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2979.0    
+Customer.NumberOut                          1439.0    
+ChatGPT Server.NumberSeized                 2110.0    
+ChatGPT Server.ScheduledUtilization         .22273    
+Payment Server.NumberSeized                 1440.0    
+Payment Server.ScheduledUtilization         .99962    
+DALL.E Server.NumberSeized                  869.00    
+DALL.E Server.ScheduledUtilization          .90740    
+System.NumberOut                            1439.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 6 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             45.635     1.5048     20.642     110.19       1439    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1439    
+Customer.WaitTime                           7271.7     (Corr)     .00000     14813.       1439    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1439    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1439    
+Customer.TotalTime                          7317.3     (Corr)     29.472     14904.       1439    
+ChatGPT.Queue.WaitingTime                   .02393     .01745     .00000     6.8806       2070    
+Payment.Queue.WaitingTime                   7235.2     (Corr)     .00000     14545.       1440    
+DALL.E.Queue.WaitingTime                    138.90     (Corr)     .00000     643.30        852    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                737.68     (Corr)     .00000     1497.0     1496.0    
+ChatGPT Server.NumberBusy                   .90632     .05339     .00000     4.0000     1.0000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .22658     .01335     .00000     1.0000     .25000    
+Payment Server.NumberBusy                   .99904     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99904     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.7588     (Insuf)    .00000     2.0000     2.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .87945     (Insuf)    .00000     1.0000     1.0000    
+ChatGPT.Queue.NumberInQueue                 .00172     (Insuf)    .00000     2.0000     .00000    
+Payment.Queue.NumberInQueue                 729.84     (Corr)     .00000     1480.0     1479.0    
+DALL.E.Queue.NumberInQueue                  4.1710     (Corr)     .00000     22.000     13.000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2935.0    
+Customer.NumberOut                          1439.0    
+ChatGPT Server.NumberSeized                 2070.0    
+ChatGPT Server.ScheduledUtilization         .22658    
+Payment Server.NumberSeized                 1440.0    
+Payment Server.ScheduledUtilization         .99904    
+DALL.E Server.NumberSeized                  852.00    
+DALL.E Server.ScheduledUtilization          .87945    
+System.NumberOut                            1439.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 7 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             47.339     .98717     20.053     104.73       1437    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1437    
+Customer.WaitTime                           7202.2     (Corr)     .00000     14327.       1437    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1437    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1437    
+Customer.TotalTime                          7249.5     (Corr)     28.780     14404.       1437    
+ChatGPT.Queue.WaitingTime                   .03763     .03071     .00000     9.8378       2003    
+Payment.Queue.WaitingTime                   7160.4     (Corr)     .00000     14324.       1438    
+DALL.E.Queue.WaitingTime                    109.98     (Corr)     .00000     527.06        864    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                722.61     (Corr)     .00000     1436.0     1436.0    
+ChatGPT Server.NumberBusy                   .88128     .04109     .00000     4.0000     .00000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .22032     .01027     .00000     1.0000     .00000    
+Payment Server.NumberBusy                   .99835     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99835     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.8066     (Insuf)    .00000     2.0000     2.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .90332     (Insuf)    .00000     1.0000     1.0000    
+ChatGPT.Queue.NumberInQueue                 .00262     (Insuf)    .00000     2.0000     .00000    
+Payment.Queue.NumberInQueue                 715.60     (Corr)     .00000     1428.0     1427.0    
+DALL.E.Queue.NumberInQueue                  3.3189     (Corr)     .00000     18.000     6.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2873.0    
+Customer.NumberOut                          1437.0    
+ChatGPT Server.NumberSeized                 2003.0    
+ChatGPT Server.ScheduledUtilization         .22032    
+Payment Server.NumberSeized                 1438.0    
+Payment Server.ScheduledUtilization         .99835    
+DALL.E Server.NumberSeized                  864.00    
+DALL.E Server.ScheduledUtilization          .90332    
+System.NumberOut                            1437.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 8 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             47.195     .86805     20.610     106.33       1439    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1439    
+Customer.WaitTime                           7435.6     (Corr)     .00000     15466.       1439    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1439    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1439    
+Customer.TotalTime                          7482.8     (Corr)     21.431     15545.       1439    
+ChatGPT.Queue.WaitingTime                   .09174     .04349     .00000     13.803       2009    
+Payment.Queue.WaitingTime                   7372.4     (Corr)     .00000     14833.       1440    
+DALL.E.Queue.WaitingTime                    313.97     (Corr)     .00000     840.10        922    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                769.94     (Corr)     .00000     1496.0     1496.0    
+ChatGPT Server.NumberBusy                   .86377     .06141     .00000     4.0000     1.0000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .21594     .01535     .00000     1.0000     .25000    
+Payment Server.NumberBusy                   .99923     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99923     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.9274     (Insuf)    .00000     2.0000     2.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .96373     (Insuf)    .00000     1.0000     1.0000    
+ChatGPT.Queue.NumberInQueue                 .00640     (Insuf)    .00000     3.0000     .00000    
+Payment.Queue.NumberInQueue                 756.07     (Corr)     .00000     1489.0     1488.0    
+DALL.E.Queue.NumberInQueue                  10.066     (Corr)     .00000     28.000     4.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2935.0    
+Customer.NumberOut                          1439.0    
+ChatGPT Server.NumberSeized                 2009.0    
+ChatGPT Server.ScheduledUtilization         .21594    
+Payment Server.NumberSeized                 1440.0    
+Payment Server.ScheduledUtilization         .99923    
+DALL.E Server.NumberSeized                  922.00    
+DALL.E Server.ScheduledUtilization          .96373    
+System.NumberOut                            1439.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 9 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             46.064     1.0463     20.516     109.11       1439    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1439    
+Customer.WaitTime                           7306.1     (Corr)     .00000     14628.       1439    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1439    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1439    
+Customer.TotalTime                          7352.1     (Corr)     25.560     14697.       1439    
+ChatGPT.Queue.WaitingTime                   .05226     .03353     .00000     17.822       2041    
+Payment.Queue.WaitingTime                   7290.5     (Corr)     .00000     14616.       1440    
+DALL.E.Queue.WaitingTime                    78.900     23.222     .00000     350.27        859    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                733.65     (Corr)     .00000     1463.0     1462.0    
+ChatGPT Server.NumberBusy                   .89107     .03418     .00000     4.0000     1.0000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .22277     .00855     .00000     1.0000     .25000    
+Payment Server.NumberBusy                   .99953     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99953     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.7722     .06846     .00000     2.0000     2.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .88613     .03423     .00000     1.0000     1.0000    
+ChatGPT.Queue.NumberInQueue                 .00370     (Insuf)    .00000     2.0000     .00000    
+Payment.Queue.NumberInQueue                 727.63     (Corr)     .00000     1458.0     1457.0    
+DALL.E.Queue.NumberInQueue                  2.3542     .75341     .00000     12.000     1.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2901.0    
+Customer.NumberOut                          1439.0    
+ChatGPT Server.NumberSeized                 2041.0    
+ChatGPT Server.ScheduledUtilization         .22277    
+Payment Server.NumberSeized                 1440.0    
+Payment Server.ScheduledUtilization         .99953    
+DALL.E Server.NumberSeized                  859.00    
+DALL.E Server.ScheduledUtilization          .88613    
+System.NumberOut                            1439.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 10 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             47.565     .96111     20.590     109.18       1439    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1439    
+Customer.WaitTime                           7105.2     (Corr)     .00000     14545.       1439    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1439    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1439    
+Customer.TotalTime                          7152.7     (Corr)     28.960     14629.       1439    
+ChatGPT.Queue.WaitingTime                   .03391     .02162     .00000     10.579       2027    
+Payment.Queue.WaitingTime                   7072.4     (Corr)     .00000     14344.       1440    
+DALL.E.Queue.WaitingTime                    149.91     (Corr)     .00000     735.30        905    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                728.91     (Corr)     .00000     1503.0     1503.0    
+ChatGPT Server.NumberBusy                   .89664     .04988     .00000     4.0000     1.0000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .22416     .01247     .00000     1.0000     .25000    
+Payment Server.NumberBusy                   .99949     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99949     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.8884     (Insuf)    .00000     2.0000     2.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .94421     (Insuf)    .00000     1.0000     1.0000    
+ChatGPT.Queue.NumberInQueue                 .00239     (Insuf)    .00000     2.0000     .00000    
+Payment.Queue.NumberInQueue                 720.39     (Corr)     .00000     1489.0     1489.0    
+DALL.E.Queue.NumberInQueue                  4.7343     (Corr)     .00000     24.000     10.000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2942.0    
+Customer.NumberOut                          1439.0    
+ChatGPT Server.NumberSeized                 2027.0    
+ChatGPT Server.ScheduledUtilization         .22416    
+Payment Server.NumberSeized                 1440.0    
+Payment Server.ScheduledUtilization         .99949    
+DALL.E Server.NumberSeized                  905.00    
+DALL.E Server.ScheduledUtilization          .94421    
+System.NumberOut                            1439.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 11 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             46.329     1.0373     20.378     105.60       1438    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1438    
+Customer.WaitTime                           7460.9     (Corr)     .00000     14669.       1438    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1438    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1438    
+Customer.TotalTime                          7507.2     (Corr)     24.342     14751.       1438    
+ChatGPT.Queue.WaitingTime                   .06742     .05862     .00000     16.071       2104    
+Payment.Queue.WaitingTime                   7443.5     (Corr)     .00000     14604.       1439    
+DALL.E.Queue.WaitingTime                    99.101     33.192     .00000     420.67        839    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                764.86     (Corr)     .00000     1511.0     1511.0    
+ChatGPT Server.NumberBusy                   .91504     .04918     .00000     4.0000     1.0000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .22876     .01230     .00000     1.0000     .25000    
+Payment Server.NumberBusy                   .99921     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99921     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.7459     (Corr)     .00000     2.0000     2.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .87297     (Corr)     .00000     1.0000     1.0000    
+ChatGPT.Queue.NumberInQueue                 .00493     (Insuf)    .00000     4.0000     .00000    
+Payment.Queue.NumberInQueue                 758.29     (Corr)     .00000     1501.0     1501.0    
+DALL.E.Queue.NumberInQueue                  2.9059     1.0348     .00000     14.000     6.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2949.0    
+Customer.NumberOut                          1438.0    
+ChatGPT Server.NumberSeized                 2104.0    
+ChatGPT Server.ScheduledUtilization         .22876    
+Payment Server.NumberSeized                 1439.0    
+Payment Server.ScheduledUtilization         .99921    
+DALL.E Server.NumberSeized                  839.00    
+DALL.E Server.ScheduledUtilization          .87297    
+System.NumberOut                            1438.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 12 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             46.149     (Corr)     20.726     106.35       1439    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1439    
+Customer.WaitTime                           7286.7     (Corr)     .00000     14575.       1439    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1439    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1439    
+Customer.TotalTime                          7332.9     (Corr)     21.624     14658.       1439    
+ChatGPT.Queue.WaitingTime                   .05717     .05874     .00000     9.3432       2029    
+Payment.Queue.WaitingTime                   7265.8     (Corr)     .00000     14403.       1440    
+DALL.E.Queue.WaitingTime                    87.325     24.881     .00000     316.77        839    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                727.73     (Corr)     .00000     1435.0     1434.0    
+ChatGPT Server.NumberBusy                   .88923     .04535     .00000     4.0000     1.0000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .22231     .01134     .00000     1.0000     .25000    
+Payment Server.NumberBusy                   .99970     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99970     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.7355     .08981     .00000     2.0000     2.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .86780     .04490     .00000     1.0000     1.0000    
+ChatGPT.Queue.NumberInQueue                 .00403     (Insuf)    .00000     4.0000     .00000    
+Payment.Queue.NumberInQueue                 721.55     (Corr)     .00000     1427.0     1425.0    
+DALL.E.Queue.NumberInQueue                  2.5519     .78382     .00000     11.000     5.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2873.0    
+Customer.NumberOut                          1439.0    
+ChatGPT Server.NumberSeized                 2029.0    
+ChatGPT Server.ScheduledUtilization         .22231    
+Payment Server.NumberSeized                 1440.0    
+Payment Server.ScheduledUtilization         .99970    
+DALL.E Server.NumberSeized                  839.00    
+DALL.E Server.ScheduledUtilization          .86780    
+System.NumberOut                            1439.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 13 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             47.472     1.0844     20.393     114.28       1438    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1438    
+Customer.WaitTime                           7342.2     (Corr)     .00000     14527.       1438    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1438    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1438    
+Customer.TotalTime                          7389.6     (Corr)     22.993     14609.       1438    
+ChatGPT.Queue.WaitingTime                   .02102     .01566     .00000     7.7781       1990    
+Payment.Queue.WaitingTime                   7258.4     (Corr)     .00000     14532.       1439    
+DALL.E.Queue.WaitingTime                    278.17     (Corr)     .00000     767.01        920    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                735.38     (Corr)     .00000     1473.0     1473.0    
+ChatGPT Server.NumberBusy                   .88246     (Corr)     .00000     4.0000     1.0000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .22061     (Corr)     .00000     1.0000     .25000    
+Payment Server.NumberBusy                   .99966     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99966     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.9219     (Insuf)    .00000     2.0000     2.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .96099     (Insuf)    .00000     1.0000     1.0000    
+ChatGPT.Queue.NumberInQueue                 .00145     (Insuf)    .00000     2.0000     .00000    
+Payment.Queue.NumberInQueue                 722.69     (Corr)     .00000     1468.0     1468.0    
+DALL.E.Queue.NumberInQueue                  8.8887     (Corr)     .00000     26.000     1.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2911.0    
+Customer.NumberOut                          1438.0    
+ChatGPT Server.NumberSeized                 1990.0    
+ChatGPT Server.ScheduledUtilization         .22061    
+Payment Server.NumberSeized                 1439.0    
+Payment Server.ScheduledUtilization         .99966    
+DALL.E Server.NumberSeized                  920.00    
+DALL.E Server.ScheduledUtilization          .96099    
+System.NumberOut                            1438.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 14 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             47.102     .81507     20.500     103.79       1439    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1439    
+Customer.WaitTime                           7619.1     (Corr)     .00000     15290.       1439    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1439    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1439    
+Customer.TotalTime                          7666.2     (Corr)     27.393     15372.       1439    
+ChatGPT.Queue.WaitingTime                   .05648     .04745     .00000     18.316       2047    
+Payment.Queue.WaitingTime                   7572.6     (Corr)     .00000     14986.       1440    
+DALL.E.Queue.WaitingTime                    120.14     (Corr)     .00000     627.41        884    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                772.54     (Corr)     .00000     1498.0     1498.0    
+ChatGPT Server.NumberBusy                   .90714     .03864     .00000     4.0000     1.0000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .22678     .00966     .00000     1.0000     .25000    
+Payment Server.NumberBusy                   .99914     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99914     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.8106     (Insuf)    .00000     2.0000     2.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .90532     (Insuf)    .00000     1.0000     1.0000    
+ChatGPT.Queue.NumberInQueue                 .00401     (Insuf)    .00000     3.0000     .00000    
+Payment.Queue.NumberInQueue                 765.12     (Corr)     .00000     1488.0     1488.0    
+DALL.E.Queue.NumberInQueue                  3.7040     (Corr)     .00000     22.000     6.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2937.0    
+Customer.NumberOut                          1439.0    
+ChatGPT Server.NumberSeized                 2047.0    
+ChatGPT Server.ScheduledUtilization         .22678    
+Payment Server.NumberSeized                 1440.0    
+Payment Server.ScheduledUtilization         .99914    
+DALL.E Server.NumberSeized                  884.00    
+DALL.E Server.ScheduledUtilization          .90532    
+System.NumberOut                            1439.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 15 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             46.494     1.2154     20.420     107.94       1439    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1439    
+Customer.WaitTime                           7254.8     (Corr)     .00000     14434.       1439    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1439    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1439    
+Customer.TotalTime                          7301.3     (Corr)     30.141     14527.       1439    
+ChatGPT.Queue.WaitingTime                   .05393     .04040     .00000     15.063       2047    
+Payment.Queue.WaitingTime                   7226.8     (Corr)     .00000     14366.       1440    
+DALL.E.Queue.WaitingTime                    107.75     (Corr)     .00000     581.85        837    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                721.24     (Corr)     .00000     1461.0     1461.0    
+ChatGPT Server.NumberBusy                   .88490     .04517     .00000     4.0000     3.0000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .22122     .01129     .00000     1.0000     .75000    
+Payment Server.NumberBusy                   .99956     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99956     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.7498     .08912     .00000     2.0000     2.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .87493     .04456     .00000     1.0000     1.0000    
+ChatGPT.Queue.NumberInQueue                 .00383     (Insuf)    .00000     2.0000     .00000    
+Payment.Queue.NumberInQueue                 714.32     (Corr)     .00000     1439.0     1439.0    
+DALL.E.Queue.NumberInQueue                  3.2777     (Corr)     .00000     19.000     16.000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2900.0    
+Customer.NumberOut                          1439.0    
+ChatGPT Server.NumberSeized                 2047.0    
+ChatGPT Server.ScheduledUtilization         .22122    
+Payment Server.NumberSeized                 1440.0    
+Payment Server.ScheduledUtilization         .99956    
+DALL.E Server.NumberSeized                  837.00    
+DALL.E Server.ScheduledUtilization          .87493    
+System.NumberOut                            1439.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 16 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             46.209     .82864     20.573     127.95       1439    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1439    
+Customer.WaitTime                           7533.7     (Corr)     .00000     15037.       1439    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1439    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1439    
+Customer.TotalTime                          7579.9     (Corr)     25.103     15146.       1439    
+ChatGPT.Queue.WaitingTime                   .07165     .05632     .00000     14.010       2117    
+Payment.Queue.WaitingTime                   7519.1     (Corr)     .00000     15040.       1440    
+DALL.E.Queue.WaitingTime                    76.889     (Corr)     .00000     330.17        871    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                788.36     (Corr)     .00000     1561.0     1558.0    
+ChatGPT Server.NumberBusy                   .93888     .05347     .00000     4.0000     .00000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .23472     .01337     .00000     1.0000     .00000    
+Payment Server.NumberBusy                   .99943     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99943     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.8012     (Insuf)    .00000     2.0000     2.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .90064     (Insuf)    .00000     1.0000     1.0000    
+ChatGPT.Queue.NumberInQueue                 .00527     (Insuf)    .00000     3.0000     .00000    
+Payment.Queue.NumberInQueue                 782.24     (Corr)     .00000     1548.0     1546.0    
+DALL.E.Queue.NumberInQueue                  2.3748     (Corr)     .00000     11.000     9.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2997.0    
+Customer.NumberOut                          1439.0    
+ChatGPT Server.NumberSeized                 2117.0    
+ChatGPT Server.ScheduledUtilization         .23472    
+Payment Server.NumberSeized                 1440.0    
+Payment Server.ScheduledUtilization         .99943    
+DALL.E Server.NumberSeized                  871.00    
+DALL.E Server.ScheduledUtilization          .90064    
+System.NumberOut                            1439.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 17 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             47.038     .98800     20.307     111.77       1439    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1439    
+Customer.WaitTime                           7144.6     (Corr)     .00000     14284.       1439    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1439    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1439    
+Customer.TotalTime                          7191.6     (Corr)     30.878     14368.       1439    
+ChatGPT.Queue.WaitingTime                   .05777     .03733     .00000     10.719       2013    
+Payment.Queue.WaitingTime                   7104.7     (Corr)     .00000     14180.       1440    
+DALL.E.Queue.WaitingTime                    110.06     (Corr)     .00000     489.90        845    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                716.88     (Corr)     .00000     1420.0     1420.0    
+ChatGPT Server.NumberBusy                   .89102     .04102     .00000     4.0000     1.0000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .22276     .01025     .00000     1.0000     .25000    
+Payment Server.NumberBusy                   .99962     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99962     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.7479     (Corr)     .00000     2.0000     2.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .87399     (Corr)     .00000     1.0000     1.0000    
+ChatGPT.Queue.NumberInQueue                 .00404     (Insuf)    .00000     2.0000     .00000    
+Payment.Queue.NumberInQueue                 710.01     (Corr)     .00000     1415.0     1415.0    
+DALL.E.Queue.NumberInQueue                  3.2295     (Corr)     .00000     16.000     1.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2859.0    
+Customer.NumberOut                          1439.0    
+ChatGPT Server.NumberSeized                 2013.0    
+ChatGPT Server.ScheduledUtilization         .22276    
+Payment Server.NumberSeized                 1440.0    
+Payment Server.ScheduledUtilization         .99962    
+DALL.E Server.NumberSeized                  845.00    
+DALL.E Server.ScheduledUtilization          .87399    
+System.NumberOut                            1439.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 18 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             46.873     1.2240     20.554     110.46       1439    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1439    
+Customer.WaitTime                           7168.0     (Corr)     .00000     14644.       1439    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1439    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1439    
+Customer.TotalTime                          7214.8     (Corr)     21.802     14720.       1439    
+ChatGPT.Queue.WaitingTime                   .02989     .01918     .00000     6.3056       2015    
+Payment.Queue.WaitingTime                   7143.7     (Corr)     .00000     14384.       1440    
+DALL.E.Queue.WaitingTime                    154.26     (Corr)     .00000     691.75        886    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                731.22     (Corr)     .00000     1480.0     1480.0    
+ChatGPT Server.NumberBusy                   .89475     .04533     .00000     4.0000     2.0000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .22369     .01133     .00000     1.0000     .50000    
+Payment Server.NumberBusy                   .99984     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99984     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.8330     (Insuf)    .00000     2.0000     2.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .91651     (Insuf)    .00000     1.0000     1.0000    
+ChatGPT.Queue.NumberInQueue                 .00209     (Insuf)    .00000     2.0000     .00000    
+Payment.Queue.NumberInQueue                 722.60     (Corr)     .00000     1457.0     1457.0    
+DALL.E.Queue.NumberInQueue                  4.8912     (Corr)     .00000     24.000     18.000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2919.0    
+Customer.NumberOut                          1439.0    
+ChatGPT Server.NumberSeized                 2015.0    
+ChatGPT Server.ScheduledUtilization         .22369    
+Payment Server.NumberSeized                 1440.0    
+Payment Server.ScheduledUtilization         .99984    
+DALL.E Server.NumberSeized                  886.00    
+DALL.E Server.ScheduledUtilization          .91651    
+System.NumberOut                            1439.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 19 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             46.034     .89450     20.737     107.73       1438    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1438    
+Customer.WaitTime                           7256.8     (Corr)     .00000     14230.       1438    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1438    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1438    
+Customer.TotalTime                          7302.8     (Corr)     30.488     14303.       1438    
+ChatGPT.Queue.WaitingTime                   .03158     .02907     .00000     14.355       2030    
+Payment.Queue.WaitingTime                   7248.7     (Corr)     .00000     14123.       1439    
+DALL.E.Queue.WaitingTime                    65.746     (Corr)     .00000     253.93        851    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                721.48     (Corr)     .00000     1444.0     1443.0    
+ChatGPT Server.NumberBusy                   .88735     .04825     .00000     4.0000     .00000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .22184     .01206     .00000     1.0000     .00000    
+Payment Server.NumberBusy                   .99918     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99918     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.7763     (Insuf)    .00000     2.0000     1.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .88816     (Insuf)    .00000     1.0000     .50000    
+ChatGPT.Queue.NumberInQueue                 .00223     (Insuf)    .00000     2.0000     .00000    
+Payment.Queue.NumberInQueue                 715.88     (Corr)     .00000     1441.0     1441.0    
+DALL.E.Queue.NumberInQueue                  1.9427     (Corr)     .00000     9.0000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2881.0    
+Customer.NumberOut                          1438.0    
+ChatGPT Server.NumberSeized                 2030.0    
+ChatGPT Server.ScheduledUtilization         .22184    
+Payment Server.NumberSeized                 1439.0    
+Payment Server.ScheduledUtilization         .99918    
+DALL.E Server.NumberSeized                  851.00    
+DALL.E Server.ScheduledUtilization          .88816    
+System.NumberOut                            1438.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 20 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             46.642     .84689     20.595     107.78       1439    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1439    
+Customer.WaitTime                           7263.3     (Corr)     .00000     14389.       1439    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1439    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1439    
+Customer.TotalTime                          7309.9     (Corr)     27.293     14453.       1439    
+ChatGPT.Queue.WaitingTime                   .02957     .01572     .00000     8.4198       2043    
+Payment.Queue.WaitingTime                   7242.9     (Corr)     .00000     14364.       1440    
+DALL.E.Queue.WaitingTime                    81.703     25.847     .00000     364.97        838    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                726.12     (Corr)     .00000     1448.0     1447.0    
+ChatGPT Server.NumberBusy                   .90228     .04908     .00000     4.0000     .00000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .22557     .01227     .00000     1.0000     .00000    
+Payment Server.NumberBusy                   .99975     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99975     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.7412     .10216     .00000     2.0000     2.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .87062     .05108     .00000     1.0000     1.0000    
+ChatGPT.Queue.NumberInQueue                 .00210     (Insuf)    .00000     2.0000     .00000    
+Payment.Queue.NumberInQueue                 720.08     (Corr)     .00000     1439.0     1439.0    
+DALL.E.Queue.NumberInQueue                  2.3928     .84188     .00000     12.000     5.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2886.0    
+Customer.NumberOut                          1439.0    
+ChatGPT Server.NumberSeized                 2043.0    
+ChatGPT Server.ScheduledUtilization         .22557    
+Payment Server.NumberSeized                 1440.0    
+Payment Server.ScheduledUtilization         .99975    
+DALL.E Server.NumberSeized                  838.00    
+DALL.E Server.ScheduledUtilization          .87062    
+System.NumberOut                            1439.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 21 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             47.384     .82179     20.594     111.65       1439    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1439    
+Customer.WaitTime                           7351.5     (Corr)     .00000     14654.       1439    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1439    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1439    
+Customer.TotalTime                          7398.9     (Corr)     30.881     14746.       1439    
+ChatGPT.Queue.WaitingTime                   .01594     .01739     .00000     9.5735       2007    
+Payment.Queue.WaitingTime                   7284.3     (Corr)     .00000     14647.       1440    
+DALL.E.Queue.WaitingTime                    173.67     (Corr)     .00000     626.59        927    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                750.89     (Corr)     .00000     1496.0     1495.0    
+ChatGPT Server.NumberBusy                   .88356     .04811     .00000     4.0000     .00000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .22089     .01203     .00000     1.0000     .00000    
+Payment Server.NumberBusy                   .99950     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99950     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.9098     (Insuf)    .00000     2.0000     2.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .95491     (Insuf)    .00000     1.0000     1.0000    
+ChatGPT.Queue.NumberInQueue                 .00111     (Insuf)    .00000     2.0000     .00000    
+Payment.Queue.NumberInQueue                 741.50     (Corr)     .00000     1492.0     1492.0    
+DALL.E.Queue.NumberInQueue                  5.5901     (Corr)     .00000     22.000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2934.0    
+Customer.NumberOut                          1439.0    
+ChatGPT Server.NumberSeized                 2007.0    
+ChatGPT Server.ScheduledUtilization         .22089    
+Payment Server.NumberSeized                 1440.0    
+Payment Server.ScheduledUtilization         .99950    
+DALL.E Server.NumberSeized                  927.00    
+DALL.E Server.ScheduledUtilization          .95491    
+System.NumberOut                            1439.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 22 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             47.995     1.1637     20.693     105.58       1440    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1440    
+Customer.WaitTime                           7302.6     (Corr)     .00000     14106.       1440    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1440    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1440    
+Customer.TotalTime                          7350.6     (Corr)     21.542     14196.       1440    
+ChatGPT.Queue.WaitingTime                   .02030     .01355     .00000     9.0384       1937    
+Payment.Queue.WaitingTime                   7260.1     (Corr)     .00000     14105.       1441    
+DALL.E.Queue.WaitingTime                    132.98     31.642     .00000     573.04        918    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                714.95     (Corr)     .00000     1421.0     1420.0    
+ChatGPT Server.NumberBusy                   .86841     (Corr)     .00000     4.0000     3.0000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .21710     (Corr)     .00000     1.0000     .75000    
+Payment Server.NumberBusy                   .99979     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99979     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.8977     (Insuf)    .00000     2.0000     2.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .94886     (Insuf)    .00000     1.0000     1.0000    
+ChatGPT.Queue.NumberInQueue                 .00137     (Insuf)    .00000     2.0000     .00000    
+Payment.Queue.NumberInQueue                 706.92     (Corr)     .00000     1409.0     1409.0    
+DALL.E.Queue.NumberInQueue                  4.2584     1.1076     .00000     20.000     5.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2860.0    
+Customer.NumberOut                          1440.0    
+ChatGPT Server.NumberSeized                 1937.0    
+ChatGPT Server.ScheduledUtilization         .21710    
+Payment Server.NumberSeized                 1441.0    
+Payment Server.ScheduledUtilization         .99979    
+DALL.E Server.NumberSeized                  918.00    
+DALL.E Server.ScheduledUtilization          .94886    
+System.NumberOut                            1440.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 23 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             46.863     1.0203     20.337     106.91       1438    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1438    
+Customer.WaitTime                           7492.4     (Corr)     .00000     14897.       1438    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1438    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1438    
+Customer.TotalTime                          7539.3     (Corr)     30.020     14964.       1438    
+ChatGPT.Queue.WaitingTime                   .03308     .02263     .00000     6.3885       2099    
+Payment.Queue.WaitingTime                   7442.0     (Corr)     .00000     14889.       1439    
+DALL.E.Queue.WaitingTime                    131.31     (Corr)     .00000     529.00        880    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                774.64     (Corr)     .00000     1541.0     1541.0    
+ChatGPT Server.NumberBusy                   .91220     .04344     .00000     4.0000     2.0000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .22805     .01086     .00000     1.0000     .50000    
+Payment Server.NumberBusy                   .99936     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99936     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.8254     (Insuf)    .00000     2.0000     2.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .91275     (Insuf)    .00000     1.0000     1.0000    
+ChatGPT.Queue.NumberInQueue                 .00241     (Insuf)    .00000     3.0000     .00000    
+Payment.Queue.NumberInQueue                 766.89     (Corr)     .00000     1536.0     1536.0    
+DALL.E.Queue.NumberInQueue                  4.0125     (Corr)     .00000     18.000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2979.0    
+Customer.NumberOut                          1438.0    
+ChatGPT Server.NumberSeized                 2099.0    
+ChatGPT Server.ScheduledUtilization         .22805    
+Payment Server.NumberSeized                 1439.0    
+Payment Server.ScheduledUtilization         .99936    
+DALL.E Server.NumberSeized                  880.00    
+DALL.E Server.ScheduledUtilization          .91275    
+System.NumberOut                            1438.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 24 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             46.569     1.0643     20.643     101.10       1439    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1439    
+Customer.WaitTime                           7031.7     (Corr)     .00000     14640.       1439    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1439    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1439    
+Customer.TotalTime                          7078.3     (Corr)     32.888     14723.       1439    
+ChatGPT.Queue.WaitingTime                   .01850     .01319     .00000     7.7596       2067    
+Payment.Queue.WaitingTime                   6998.1     (Corr)     .00000     14203.       1440    
+DALL.E.Queue.WaitingTime                    244.60     (Corr)     .00000     613.60        899    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                725.57     (Corr)     .00000     1531.0     1531.0    
+ChatGPT Server.NumberBusy                   .92296     .05618     .00000     4.0000     .00000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .23074     .01405     .00000     1.0000     .00000    
+Payment Server.NumberBusy                   .99941     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99941     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.8718     (Insuf)    .00000     2.0000     2.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .93594     (Insuf)    .00000     1.0000     1.0000    
+ChatGPT.Queue.NumberInQueue                 .00133     (Insuf)    .00000     2.0000     .00000    
+Payment.Queue.NumberInQueue                 714.13     (Corr)     .00000     1524.0     1524.0    
+DALL.E.Queue.NumberInQueue                  7.6456     (Corr)     .00000     21.000     4.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2970.0    
+Customer.NumberOut                          1439.0    
+ChatGPT Server.NumberSeized                 2067.0    
+ChatGPT Server.ScheduledUtilization         .23074    
+Payment Server.NumberSeized                 1440.0    
+Payment Server.ScheduledUtilization         .99941    
+DALL.E Server.NumberSeized                  899.00    
+DALL.E Server.ScheduledUtilization          .93594    
+System.NumberOut                            1439.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 25 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             45.549     .99318     20.717     110.16       1438    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1438    
+Customer.WaitTime                           7269.7     (Corr)     .00000     14942.       1438    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1438    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1438    
+Customer.TotalTime                          7315.3     (Corr)     29.757     15031.       1438    
+ChatGPT.Queue.WaitingTime                   .05026     .03077     .00000     9.6505       2104    
+Payment.Queue.WaitingTime                   7252.7     (Corr)     .00000     14891.       1439    
+DALL.E.Queue.WaitingTime                    91.426     28.368     .00000     455.55        861    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                761.67     (Corr)     .00000     1531.0     1531.0    
+ChatGPT Server.NumberBusy                   .92468     .03855     .00000     4.0000     2.0000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .23117     .00964     .00000     1.0000     .50000    
+Payment Server.NumberBusy                   .99898     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99898     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.7705     (Insuf)    .00000     2.0000     2.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .88528     (Insuf)    .00000     1.0000     1.0000    
+ChatGPT.Queue.NumberInQueue                 .00367     (Insuf)    .00000     2.0000     .00000    
+Payment.Queue.NumberInQueue                 755.24     (Corr)     .00000     1523.0     1522.0    
+DALL.E.Queue.NumberInQueue                  2.7397     1.0012     .00000     16.000     4.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2969.0    
+Customer.NumberOut                          1438.0    
+ChatGPT Server.NumberSeized                 2104.0    
+ChatGPT Server.ScheduledUtilization         .23117    
+Payment Server.NumberSeized                 1439.0    
+Payment Server.ScheduledUtilization         .99898    
+DALL.E Server.NumberSeized                  861.00    
+DALL.E Server.ScheduledUtilization          .88528    
+System.NumberOut                            1438.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 26 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             47.551     .70428     20.391     113.43       1439    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1439    
+Customer.WaitTime                           7583.9     (Corr)     .00000     15619.       1439    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1439    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1439    
+Customer.TotalTime                          7631.5     (Corr)     30.756     15699.       1439    
+ChatGPT.Queue.WaitingTime                   .06173     .05436     .00000     17.764       2104    
+Payment.Queue.WaitingTime                   7506.5     (Corr)     .00000     15131.       1440    
+DALL.E.Queue.WaitingTime                    239.40     (Corr)     .00000     694.62        913    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                815.26     (Corr)     .00000     1584.0     1583.0    
+ChatGPT Server.NumberBusy                   .93665     .04623     .00000     4.0000     1.0000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .23416     .01156     .00000     1.0000     .25000    
+Payment Server.NumberBusy                   .99915     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99915     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.9153     (Insuf)    .00000     2.0000     2.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .95767     (Insuf)    .00000     1.0000     1.0000    
+ChatGPT.Queue.NumberInQueue                 .00451     (Insuf)    .00000     5.0000     .00000    
+Payment.Queue.NumberInQueue                 803.79     (Corr)     .00000     1575.0     1574.0    
+DALL.E.Queue.NumberInQueue                  7.6099     (Corr)     .00000     24.000     5.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           3022.0    
+Customer.NumberOut                          1439.0    
+ChatGPT Server.NumberSeized                 2104.0    
+ChatGPT Server.ScheduledUtilization         .23416    
+Payment Server.NumberSeized                 1440.0    
+Payment Server.ScheduledUtilization         .99915    
+DALL.E Server.NumberSeized                  913.00    
+DALL.E Server.ScheduledUtilization          .95767    
+System.NumberOut                            1439.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 27 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             46.938     1.0283     20.501     108.87       1439    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1439    
+Customer.WaitTime                           6982.1     (Corr)     .00000     14065.       1439    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1439    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1439    
+Customer.TotalTime                          7029.0     (Corr)     40.611     14138.       1439    
+ChatGPT.Queue.WaitingTime                   .05753     .03817     .00000     9.7070       1973    
+Payment.Queue.WaitingTime                   6955.3     (Corr)     .00000     14015.       1440    
+DALL.E.Queue.WaitingTime                    109.14     (Corr)     .00000     475.81        859    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                679.17     (Corr)     .00000     1401.0     1399.0    
+ChatGPT Server.NumberBusy                   .88346     .05198     .00000     4.0000     .00000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .22086     .01300     .00000     1.0000     .00000    
+Payment Server.NumberBusy                   .99929     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99929     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.7653     (Insuf)    .00000     2.0000     2.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .88265     (Insuf)    .00000     1.0000     1.0000    
+ChatGPT.Queue.NumberInQueue                 .00394     (Insuf)    .00000     2.0000     .00000    
+Payment.Queue.NumberInQueue                 672.23     (Corr)     .00000     1390.0     1390.0    
+DALL.E.Queue.NumberInQueue                  3.2888     (Corr)     .00000     17.000     6.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2838.0    
+Customer.NumberOut                          1439.0    
+ChatGPT Server.NumberSeized                 1973.0    
+ChatGPT Server.ScheduledUtilization         .22086    
+Payment Server.NumberSeized                 1440.0    
+Payment Server.ScheduledUtilization         .99929    
+DALL.E Server.NumberSeized                  859.00    
+DALL.E Server.ScheduledUtilization          .88265    
+System.NumberOut                            1439.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 28 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             47.054     .92003     20.595     104.03       1439    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1439    
+Customer.WaitTime                           7599.0     (Corr)     .00000     14944.       1439    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1439    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1439    
+Customer.TotalTime                          7646.1     (Corr)     23.094     15021.       1439    
+ChatGPT.Queue.WaitingTime                   .08525     .05755     .00000     10.249       2110    
+Payment.Queue.WaitingTime                   7532.6     (Corr)     .00000     14944.       1440    
+DALL.E.Queue.WaitingTime                    207.61     (Corr)     .00000     544.21        929    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                793.34     (Corr)     .00000     1605.0     1605.0    
+ChatGPT Server.NumberBusy                   .94009     .05490     .00000     4.0000     .00000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .23502     .01372     .00000     1.0000     .00000    
+Payment Server.NumberBusy                   .99989     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99989     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.9191     (Insuf)    .00000     2.0000     2.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .95959     (Insuf)    .00000     1.0000     1.0000    
+ChatGPT.Queue.NumberInQueue                 .00625     (Insuf)    .00000     3.0000     .00000    
+Payment.Queue.NumberInQueue                 782.77     (Corr)     .00000     1597.0     1597.0    
+DALL.E.Queue.NumberInQueue                  6.7038     (Corr)     .00000     19.000     5.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           3044.0    
+Customer.NumberOut                          1439.0    
+ChatGPT Server.NumberSeized                 2110.0    
+ChatGPT Server.ScheduledUtilization         .23502    
+Payment Server.NumberSeized                 1440.0    
+Payment Server.ScheduledUtilization         .99989    
+DALL.E Server.NumberSeized                  929.00    
+DALL.E Server.ScheduledUtilization          .95959    
+System.NumberOut                            1439.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 29 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             44.532     .97846     20.454     104.80       1438    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1438    
+Customer.WaitTime                           6989.6     (Corr)     .00000     14177.       1438    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1438    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1438    
+Customer.TotalTime                          7034.1     (Corr)     22.770     14262.       1438    
+ChatGPT.Queue.WaitingTime                   .08460     .04587     .00000     12.854       2072    
+Payment.Queue.WaitingTime                   6984.6     (Corr)     .00000     14049.       1439    
+DALL.E.Queue.WaitingTime                    93.830     (Corr)     .00000     436.04        829    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                717.99     (Corr)     .00000     1465.0     1464.0    
+ChatGPT Server.NumberBusy                   .87562     .04683     .00000     4.0000     2.0000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .21891     .01171     .00000     1.0000     .50000    
+Payment Server.NumberBusy                   .99902     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99902     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.7086     (Corr)     .00000     2.0000     2.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .85431     (Corr)     .00000     1.0000     1.0000    
+ChatGPT.Queue.NumberInQueue                 .00609     (Insuf)    .00000     3.0000     .00000    
+Payment.Queue.NumberInQueue                 711.69     (Corr)     .00000     1459.0     1458.0    
+DALL.E.Queue.NumberInQueue                  2.7011     (Corr)     .00000     15.000     1.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2902.0    
+Customer.NumberOut                          1438.0    
+ChatGPT Server.NumberSeized                 2072.0    
+ChatGPT Server.ScheduledUtilization         .21891    
+Payment Server.NumberSeized                 1439.0    
+Payment Server.ScheduledUtilization         .99902    
+DALL.E Server.NumberSeized                  829.00    
+DALL.E Server.ScheduledUtilization          .85431    
+System.NumberOut                            1438.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 30 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             47.223     .98533     20.761     107.88       1438    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1438    
+Customer.WaitTime                           7338.8     (Corr)     .00000     14875.       1438    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1438    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1438    
+Customer.TotalTime                          7386.0     (Corr)     23.940     14956.       1438    
+ChatGPT.Queue.WaitingTime                   .03470     .02190     .00000     9.3717       2125    
+Payment.Queue.WaitingTime                   7306.8     (Corr)     .00000     14663.       1439    
+DALL.E.Queue.WaitingTime                    135.71     (Corr)     .00000     509.76        905    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                782.51     (Corr)     .00000     1602.0     1601.0    
+ChatGPT Server.NumberBusy                   .93244     .04278     .00000     4.0000     .00000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .23311     .01069     .00000     1.0000     .00000    
+Payment Server.NumberBusy                   .99906     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99906     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.8733     (Insuf)    .00000     2.0000     2.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .93668     (Insuf)    .00000     1.0000     1.0000    
+ChatGPT.Queue.NumberInQueue                 .00256     (Insuf)    .00000     3.0000     .00000    
+Payment.Queue.NumberInQueue                 774.41     (Corr)     .00000     1589.0     1589.0    
+DALL.E.Queue.NumberInQueue                  4.2948     (Corr)     .00000     18.000     9.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           3039.0    
+Customer.NumberOut                          1438.0    
+ChatGPT Server.NumberSeized                 2125.0    
+ChatGPT Server.ScheduledUtilization         .23311    
+Payment Server.NumberSeized                 1439.0    
+Payment Server.ScheduledUtilization         .99906    
+DALL.E Server.NumberSeized                  905.00    
+DALL.E Server.ScheduledUtilization          .93668    
+System.NumberOut                            1438.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 31 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             46.541     (Corr)     20.604     109.12       1438    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1438    
+Customer.WaitTime                           7496.8     (Corr)     .00000     15041.       1438    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1438    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1438    
+Customer.TotalTime                          7543.4     (Corr)     28.361     15100.       1438    
+ChatGPT.Queue.WaitingTime                   .04517     .02330     .00000     7.3085       2080    
+Payment.Queue.WaitingTime                   7473.3     (Corr)     .00000     14991.       1439    
+DALL.E.Queue.WaitingTime                    117.15     (Corr)     .00000     485.38        882    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                776.71     (Corr)     .00000     1527.0     1527.0    
+ChatGPT Server.NumberBusy                   .89607     .06043     .00000     4.0000     2.0000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .22402     .01511     .00000     1.0000     .50000    
+Payment Server.NumberBusy                   .99925     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99925     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.8331     (Insuf)    .00000     2.0000     2.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .91656     (Insuf)    .00000     1.0000     1.0000    
+ChatGPT.Queue.NumberInQueue                 .00326     (Insuf)    .00000     2.0000     .00000    
+Payment.Queue.NumberInQueue                 769.38     (Corr)     .00000     1519.0     1519.0    
+DALL.E.Queue.NumberInQueue                  3.5973     (Corr)     .00000     17.000     3.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2965.0    
+Customer.NumberOut                          1438.0    
+ChatGPT Server.NumberSeized                 2080.0    
+ChatGPT Server.ScheduledUtilization         .22402    
+Payment Server.NumberSeized                 1439.0    
+Payment Server.ScheduledUtilization         .99925    
+DALL.E Server.NumberSeized                  882.00    
+DALL.E Server.ScheduledUtilization          .91656    
+System.NumberOut                            1438.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 32 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             46.734     .83029     20.608     109.30       1439    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1439    
+Customer.WaitTime                           7068.5     (Corr)     .00000     14799.       1439    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1439    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1439    
+Customer.TotalTime                          7115.3     (Corr)     22.630     14908.       1439    
+ChatGPT.Queue.WaitingTime                   .05679     .02500     .00000     12.888       2087    
+Payment.Queue.WaitingTime                   7021.5     (Corr)     .00000     14700.       1440    
+DALL.E.Queue.WaitingTime                    151.52     (Corr)     .00000     588.46        911    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                758.35     (Corr)     .00000     1559.0     1559.0    
+ChatGPT Server.NumberBusy                   .92497     .05570     .00000     4.0000     .00000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .23124     .01393     .00000     1.0000     .00000    
+Payment Server.NumberBusy                   .99991     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99991     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.8777     (Insuf)    .00000     2.0000     1.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .93888     (Insuf)    .00000     1.0000     .50000    
+ChatGPT.Queue.NumberInQueue                 .00412     (Insuf)    .00000     2.0000     .00000    
+Payment.Queue.NumberInQueue                 749.75     (Corr)     .00000     1557.0     1557.0    
+DALL.E.Queue.NumberInQueue                  4.7931     (Corr)     .00000     21.000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2998.0    
+Customer.NumberOut                          1439.0    
+ChatGPT Server.NumberSeized                 2087.0    
+ChatGPT Server.ScheduledUtilization         .23124    
+Payment Server.NumberSeized                 1440.0    
+Payment Server.ScheduledUtilization         .99991    
+DALL.E Server.NumberSeized                  911.00    
+DALL.E Server.ScheduledUtilization          .93888    
+System.NumberOut                            1439.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 33 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             45.880     1.1778     20.599     104.14       1439    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1439    
+Customer.WaitTime                           7289.9     (Corr)     .00000     14845.       1439    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1439    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1439    
+Customer.TotalTime                          7335.8     (Corr)     24.850     14931.       1439    
+ChatGPT.Queue.WaitingTime                   .04016     .02484     .00000     13.067       2060    
+Payment.Queue.WaitingTime                   7267.2     (Corr)     .00000     14709.       1440    
+DALL.E.Queue.WaitingTime                    144.02     (Corr)     .00000     585.09        882    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                769.39     (Corr)     .00000     1512.0     1510.0    
+ChatGPT Server.NumberBusy                   .90589     (Corr)     .00000     4.0000     .00000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .22647     (Corr)     .00000     1.0000     .00000    
+Payment Server.NumberBusy                   .99944     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99944     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.8271     (Insuf)    .00000     2.0000     2.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .91356     (Insuf)    .00000     1.0000     1.0000    
+ChatGPT.Queue.NumberInQueue                 .00287     (Insuf)    .00000     2.0000     .00000    
+Payment.Queue.NumberInQueue                 761.22     (Corr)     .00000     1500.0     1500.0    
+DALL.E.Queue.NumberInQueue                  4.4318     (Corr)     .00000     19.000     7.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2949.0    
+Customer.NumberOut                          1439.0    
+ChatGPT Server.NumberSeized                 2060.0    
+ChatGPT Server.ScheduledUtilization         .22647    
+Payment Server.NumberSeized                 1440.0    
+Payment Server.ScheduledUtilization         .99944    
+DALL.E Server.NumberSeized                  882.00    
+DALL.E Server.ScheduledUtilization          .91356    
+System.NumberOut                            1439.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 34 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             46.651     1.0365     20.557     115.06       1439    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1439    
+Customer.WaitTime                           7305.3     (Corr)     .00000     14362.       1439    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1439    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1439    
+Customer.TotalTime                          7352.0     (Corr)     26.940     14419.       1439    
+ChatGPT.Queue.WaitingTime                   .04045     .03077     .00000     10.305       1992    
+Payment.Queue.WaitingTime                   7289.3     (Corr)     .00000     14362.       1440    
+DALL.E.Queue.WaitingTime                    95.185     (Corr)     .00000     427.22        877    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                721.54     (Corr)     .00000     1438.0     1438.0    
+ChatGPT Server.NumberBusy                   .88159     .04347     .00000     4.0000     1.0000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .22040     .01087     .00000     1.0000     .25000    
+Payment Server.NumberBusy                   .99972     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99972     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.8016     (Insuf)    .00000     2.0000     2.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .90084     (Insuf)    .00000     1.0000     1.0000    
+ChatGPT.Queue.NumberInQueue                 .00280     (Insuf)    .00000     3.0000     .00000    
+Payment.Queue.NumberInQueue                 714.93     (Corr)     .00000     1427.0     1426.0    
+DALL.E.Queue.NumberInQueue                  2.9280     .88396     .00000     15.000     8.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2877.0    
+Customer.NumberOut                          1439.0    
+ChatGPT Server.NumberSeized                 1992.0    
+ChatGPT Server.ScheduledUtilization         .22040    
+Payment Server.NumberSeized                 1440.0    
+Payment Server.ScheduledUtilization         .99972    
+DALL.E Server.NumberSeized                  877.00    
+DALL.E Server.ScheduledUtilization          .90084    
+System.NumberOut                            1439.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 35 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             46.702     1.2311     20.569     106.32       1439    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1439    
+Customer.WaitTime                           7323.8     (Corr)     .00000     14534.       1439    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1439    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1439    
+Customer.TotalTime                          7370.5     (Corr)     22.250     14606.       1439    
+ChatGPT.Queue.WaitingTime                   .02904     .01586     .00000     5.1519       2029    
+Payment.Queue.WaitingTime                   7272.3     (Corr)     .00000     14437.       1440    
+DALL.E.Queue.WaitingTime                    135.58     (Corr)     .00000     639.69        840    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                722.21     (Corr)     .00000     1430.0     1430.0    
+ChatGPT Server.NumberBusy                   .88233     .04047     .00000     4.0000     1.0000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .22058     .01012     .00000     1.0000     .25000    
+Payment Server.NumberBusy                   .99993     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99993     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.7402     (Insuf)    .00000     2.0000     2.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .87014     (Insuf)    .00000     1.0000     1.0000    
+ChatGPT.Queue.NumberInQueue                 .00205     (Insuf)    .00000     2.0000     .00000    
+Payment.Queue.NumberInQueue                 714.63     (Corr)     .00000     1426.0     1426.0    
+DALL.E.Queue.NumberInQueue                  3.9545     (Corr)     .00000     22.000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2869.0    
+Customer.NumberOut                          1439.0    
+ChatGPT Server.NumberSeized                 2029.0    
+ChatGPT Server.ScheduledUtilization         .22058    
+Payment Server.NumberSeized                 1440.0    
+Payment Server.ScheduledUtilization         .99993    
+DALL.E Server.NumberSeized                  840.00    
+DALL.E Server.ScheduledUtilization          .87014    
+System.NumberOut                            1439.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 36 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             46.012     .91566     20.565     107.11       1437    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1437    
+Customer.WaitTime                           7168.7     (Corr)     .00000     14452.       1437    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1437    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1437    
+Customer.TotalTime                          7214.7     (Corr)     21.700     14543.       1437    
+ChatGPT.Queue.WaitingTime                   .08267     .07840     .00000     15.935       2153    
+Payment.Queue.WaitingTime                   7154.7     (Corr)     .00000     14462.       1438    
+DALL.E.Queue.WaitingTime                    89.934     (Corr)     .00000     395.75        842    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                747.83     (Corr)     .00000     1562.0     1562.0    
+ChatGPT Server.NumberBusy                   .92040     .05128     .00000     4.0000     .00000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .23010     .01282     .00000     1.0000     .00000    
+Payment Server.NumberBusy                   .99864     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99864     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.7770     (Insuf)    .00000     2.0000     2.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .88852     (Insuf)    .00000     1.0000     1.0000    
+ChatGPT.Queue.NumberInQueue                 .00618     (Insuf)    .00000     5.0000     .00000    
+Payment.Queue.NumberInQueue                 741.48     (Corr)     .00000     1555.0     1555.0    
+DALL.E.Queue.NumberInQueue                  2.6481     (Corr)     .00000     15.000     4.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2999.0    
+Customer.NumberOut                          1437.0    
+ChatGPT Server.NumberSeized                 2153.0    
+ChatGPT Server.ScheduledUtilization         .23010    
+Payment Server.NumberSeized                 1438.0    
+Payment Server.ScheduledUtilization         .99864    
+DALL.E Server.NumberSeized                  842.00    
+DALL.E Server.ScheduledUtilization          .88852    
+System.NumberOut                            1437.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 37 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             45.055     1.0709     20.307     106.56       1437    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1437    
+Customer.WaitTime                           6956.8     (Corr)     .00000     14268.       1437    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1437    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1437    
+Customer.TotalTime                          7001.9     (Corr)     26.599     14352.       1437    
+ChatGPT.Queue.WaitingTime                   .05261     .02967     .00000     8.3028       1995    
+Payment.Queue.WaitingTime                   6953.6     (Corr)     .00000     14120.       1438    
+DALL.E.Queue.WaitingTime                    97.751     (Corr)     .00000     382.93        830    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                686.59     (Corr)     .00000     1397.0     1395.0    
+ChatGPT Server.NumberBusy                   .87320     .04066     .00000     4.0000     .00000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .21830     .01016     .00000     1.0000     .00000    
+Payment Server.NumberBusy                   .99845     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99845     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.7187     .11569     .00000     2.0000     2.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .85938     .05785     .00000     1.0000     1.0000    
+ChatGPT.Queue.NumberInQueue                 .00364     (Insuf)    .00000     2.0000     .00000    
+Payment.Queue.NumberInQueue                 680.13     (Corr)     .00000     1386.0     1385.0    
+DALL.E.Queue.NumberInQueue                  2.8622     (Corr)     .00000     13.000     7.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2832.0    
+Customer.NumberOut                          1437.0    
+ChatGPT Server.NumberSeized                 1995.0    
+ChatGPT Server.ScheduledUtilization         .21830    
+Payment Server.NumberSeized                 1438.0    
+Payment Server.ScheduledUtilization         .99845    
+DALL.E Server.NumberSeized                  830.00    
+DALL.E Server.ScheduledUtilization          .85938    
+System.NumberOut                            1437.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 38 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             46.829     1.1914     20.141     109.06       1439    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1439    
+Customer.WaitTime                           7625.1     (Corr)     .00000     15173.       1439    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1439    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1439    
+Customer.TotalTime                          7671.9     (Corr)     21.845     15250.       1439    
+ChatGPT.Queue.WaitingTime                   .01919     .01771     .00000     6.6624       2023    
+Payment.Queue.WaitingTime                   7584.7     (Corr)     .00000     14899.       1440    
+DALL.E.Queue.WaitingTime                    291.50     (Corr)     .00000     758.43        935    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                788.94     (Corr)     .00000     1526.0     1524.0    
+ChatGPT Server.NumberBusy                   .90789     .03894     .00000     4.0000     .00000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .22697     .00974     .00000     1.0000     .00000    
+Payment Server.NumberBusy                   .99934     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99934     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.9297     (Insuf)    .00000     2.0000     2.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .96485     (Insuf)    .00000     1.0000     1.0000    
+ChatGPT.Queue.NumberInQueue                 .00135     (Insuf)    .00000     2.0000     .00000    
+Payment.Queue.NumberInQueue                 775.62     (Corr)     .00000     1517.0     1516.0    
+DALL.E.Queue.NumberInQueue                  9.4792     (Corr)     .00000     25.000     5.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2963.0    
+Customer.NumberOut                          1439.0    
+ChatGPT Server.NumberSeized                 2023.0    
+ChatGPT Server.ScheduledUtilization         .22697    
+Payment Server.NumberSeized                 1440.0    
+Payment Server.ScheduledUtilization         .99934    
+DALL.E Server.NumberSeized                  935.00    
+DALL.E Server.ScheduledUtilization          .96485    
+System.NumberOut                            1439.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 39 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             46.703     1.0450     20.553     103.97       1437    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1437    
+Customer.WaitTime                           7292.5     (Corr)     .00000     14847.       1437    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1437    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1437    
+Customer.TotalTime                          7339.2     (Corr)     34.741     14923.       1437    
+ChatGPT.Queue.WaitingTime                   .03849     .02022     .00000     5.7088       2020    
+Payment.Queue.WaitingTime                   7198.8     (Corr)     .00000     14681.       1438    
+DALL.E.Queue.WaitingTime                    334.55     (Corr)     .00000     824.29        912    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                757.93     (Corr)     .00000     1496.0     1495.0    
+ChatGPT Server.NumberBusy                   .88081     .05616     .00000     4.0000     1.0000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .22020     .01404     .00000     1.0000     .25000    
+Payment Server.NumberBusy                   .99867     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99867     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.8876     (Insuf)    .00000     2.0000     2.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .94384     (Insuf)    .00000     1.0000     1.0000    
+ChatGPT.Queue.NumberInQueue                 .00270     (Insuf)    .00000     2.0000     .00000    
+Payment.Queue.NumberInQueue                 743.57     (Corr)     .00000     1491.0     1491.0    
+DALL.E.Queue.NumberInQueue                  10.594     (Corr)     .00000     28.000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2932.0    
+Customer.NumberOut                          1437.0    
+ChatGPT Server.NumberSeized                 2020.0    
+ChatGPT Server.ScheduledUtilization         .22020    
+Payment Server.NumberSeized                 1438.0    
+Payment Server.ScheduledUtilization         .99867    
+DALL.E Server.NumberSeized                  912.00    
+DALL.E Server.ScheduledUtilization          .94384    
+System.NumberOut                            1437.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                  Summary for Replication 40 of 40
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+Replication ended at time      : 28800.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             46.633     1.0356     20.596     119.54       1438    
+Customer.NVATime                            .00000     .00000     .00000     .00000       1438    
+Customer.WaitTime                           7269.7     (Corr)     .00000     14617.       1438    
+Customer.TranTime                           .00000     .00000     .00000     .00000       1438    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       1438    
+Customer.TotalTime                          7316.4     (Corr)     31.565     14687.       1438    
+ChatGPT.Queue.WaitingTime                   .03886     .02484     .00000     8.2559       2099    
+Payment.Queue.WaitingTime                   7252.4     (Corr)     .00000     14512.       1439    
+DALL.E.Queue.WaitingTime                    88.378     (Corr)     .00000     334.92        885    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                769.61     (Corr)     .00000     1551.0     1550.0    
+ChatGPT Server.NumberBusy                   .93201     .05563     .00000     4.0000     .00000    
+ChatGPT Server.NumberScheduled              4.0000     (Insuf)    4.0000     4.0000     4.0000    
+ChatGPT Server.Utilization                  .23300     .01391     .00000     1.0000     .00000    
+Payment Server.NumberBusy                   .99903     (Insuf)    .00000     1.0000     1.0000    
+Payment Server.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Payment Server.Utilization                  .99903     (Insuf)    .00000     1.0000     1.0000    
+DALL.E Server.NumberBusy                    1.8323     (Insuf)    .00000     2.0000     2.0000    
+DALL.E Server.NumberScheduled               2.0000     (Insuf)    2.0000     2.0000     2.0000    
+DALL.E Server.Utilization                   .91617     (Insuf)    .00000     1.0000     1.0000    
+ChatGPT.Queue.NumberInQueue                 .00283     (Insuf)    .00000     2.0000     .00000    
+Payment.Queue.NumberInQueue                 763.12     (Corr)     .00000     1543.0     1543.0    
+DALL.E.Queue.NumberInQueue                  2.7250     (Corr)     .00000     13.000     4.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2988.0    
+Customer.NumberOut                          1438.0    
+ChatGPT Server.NumberSeized                 2099.0    
+ChatGPT Server.ScheduledUtilization         .23300    
+Payment Server.NumberSeized                 1439.0    
+Payment Server.ScheduledUtilization         .99903    
+DALL.E Server.NumberSeized                  885.00    
+DALL.E Server.ScheduledUtilization          .91617    
+System.NumberOut                            1438.0    
+
+
+                                      ARENA Simulation Results
+                                   HAMAHANG - License: 7328734345
+
+                                 Output Summary for 40 Replications
+
+Project: Unnamed Project                                             Run execution date : 4/26/2024
+Analyst: Rockwell Automation                                         Model revision date: 4/26/2024
+
+
+                                             OUTPUTS
+
+Identifier                                 Average    Half-width Minimum    Maximum # Replications
+___________________________________________________________________________________________________
+
+Customer.NumberIn                           2931.8     18.363     2825.0     3044.0     40
+Customer.NumberOut                          1438.5     .24226     1437.0     1440.0     40
+ChatGPT Server.NumberSeized                 2049.9     15.314     1937.0     2153.0     40
+ChatGPT Server.ScheduledUtilization         .22488     .00166     .21594     .23502     40
+Payment Server.NumberSeized                 1439.5     .24226     1438.0     1441.0     40
+Payment Server.ScheduledUtilization         .99930     1.4614E-04 .99778     .99993     40
+DALL.E Server.NumberSeized                  876.02     10.625     817.00     935.00     40
+DALL.E Server.ScheduledUtilization          .90776     .01109     .84224     .96485     40
+System.NumberOut                            1438.5     .24226     1437.0     1440.0     40
+
+Simulation run time: 0.10 minutes.
+Simulation run complete.

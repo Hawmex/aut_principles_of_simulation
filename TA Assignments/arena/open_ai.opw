@@ -1,0 +1,15 @@
+[RESOURCES]
+ChatGPT Server
+Payment Server
+DALL.E Server
+[VARIABLES]
+DALL.E.NumberIn
+Payment.NumberIn
+Payment.NumberOut
+ChatGPT.NumberIn
+ChatGPT.NumberOut
+Departure.NumberOut
+Service Selection.NumberOut True
+DALL.E.NumberOut
+Arrival.NumberOut
+Service Selection.NumberOut False

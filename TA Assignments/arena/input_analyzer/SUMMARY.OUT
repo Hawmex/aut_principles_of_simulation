@@ -1,0 +1,17 @@
+Fit All
+
+Document:  D:\Undergraduate Coursework\Principles of Simulation\homeworks\TA Assignments\arena\times\payment.txt
+Data File: D:\Undergraduate Coursework\Principles of Simulation\homeworks\TA Assignments\arena\times\payment.txt
+
+
+Function       Sq Error
+-----------------------
+Normal         0.000555
+Beta           0.000748
+Weibull        0.000856
+Gamma          0.00202
+Erlang         0.0021
+Lognormal      0.00384
+Triangular     0.0154
+Uniform        0.0401
+Exponential    0.0527
