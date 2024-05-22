@@ -54,27 +54,31 @@ class SimController:
     - stopTime (float): The time at which the simulation should stop.
     """
 
-    def __init__(self, initialEvent: SimEvent, stopTime: float) -> None:
+    def __init__(self, stopTime: float, initialEvent: SimEvent | None = None) -> None:
         """
         Initialize the SimController with an initial event and a stop time.
 
         Args:
-        - initialEvent (SimEvent): The initial event to start the simulation.
         - stopTime (float): The time at which the simulation should stop.
+        - initialEvent (SimEvent | None, optional): The initial event to start the simulation.
+          Defaults to None.
 
         Raises:
         - AssertionError: If the initial event's interval is non-zero or if the stop time is non-positive.
         """
 
-        assert initialEvent.interval == 0, "Non-zero interval for the initial event"
         assert stopTime > 0, "Non-positive stop time"
+
+        if initialEvent is not None:
+            assert initialEvent.interval == 0, "Non-zero interval for the initial event"
 
         self.futureEvents: List[SimEvent] = []
         self.clock: float = 0
 
         self.stopTime = stopTime
 
-        self.dispatchEvent(initialEvent)
+        if initialEvent is not None:
+            self.dispatchEvent(initialEvent)
 
     def dispatchEvent(self, event: SimEvent) -> None:
         """
