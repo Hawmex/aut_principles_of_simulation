@@ -26,6 +26,11 @@ class UniformDist:
         return (X - min) / (max - min)
 
 
+# ======================================
+#          Extra Distributions
+# ======================================
+
+
 class ExponentialDist:
     def __init__(self, lambdaa):
         self.lambdaa = lambdaa
