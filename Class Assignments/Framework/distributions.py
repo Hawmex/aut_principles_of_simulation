@@ -3,9 +3,10 @@ import math
 
 
 class NormalDist:
-    def __init__(self, mean, stddev):
+    def __init__(self, mean, variance):
         self.mean = mean
-        self.stddev = stddev
+        self.variance = variance
+        self.stddev = math.sqrt(variance)
 
     def pdf(self, x):
         return (1 / (self.stddev * math.sqrt(2 * math.pi))) * math.e ** (
@@ -23,9 +24,6 @@ class UniformDist:
 
     def cdf(self, X):
         return (X - min) / (max - min)
-
-
-# print(generateUniform(UniformDist(3, 8), [0.23, 0.75, 0.44, 0.34, 0.91]))
 
 
 class ExponentialDist:
