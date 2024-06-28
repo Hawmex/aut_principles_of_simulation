@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simulation Visualizer</title>
+    <!-- replace with production versions after code is ready -->
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/@babel/standalone/babel.min.js"
+      crossorigin
+    ></script>
+    <!-- Include eel.js - note this file doesn't exist in the 'web' directory -->
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript" src="/jspy.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function DoctorRoom() {
+        return <div>this is doctor room</div>;
+      }
+
+      function Queue() {
+        return <div>this is a queue</div>;
+      }
+      // React Component
+      const App = () => {
+        const [a, setA] = React.useState(12);
+
+        eel.expose(animate_doctor); // Expose this function to Python
+        function animate_doctor(val) {
+          setA(val);
+        }
+
+        return (
+          <div>
+            <DoctorRoom />
+            <DoctorRoom />
+            <DoctorRoom />
+            <Queue />
+            Doctor: {a}
+          </div>
+        );
+      };
+
+      // Render the React Component
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(<App />);
+    </script>
+  </body>
+</html>
