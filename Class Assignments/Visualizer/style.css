@@ -6,6 +6,7 @@
 
 :root {
   --grid: 56px;
+  --gap: 2px;
 }
 
 body {
@@ -23,37 +24,48 @@ body {
   height: 100%;
   width: 100%;
   display: grid;
+  /* overflow: auto; */
 
   background-color: rgb(16, 58, 59);
   grid-template-columns: repeat(auto-fill, var(--grid));
   grid-template-rows: repeat(auto-fill, var(--grid));
-  gap: 2px;
+  gap: var(--gap);
+  /* grid-auto-flow: desnse; */
 
   /* grid lines */
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: -2px;
-    left: -2px;
+    top: calc(-1 * var(--gap));
+    left: calc(-1 * var(--gap));
     right: 0;
     bottom: 0;
     pointer-events: none;
-    background-size: 58px 58px;
-    background-image: linear-gradient(to right, #00000010 2px, transparent 2px),
-      linear-gradient(to bottom, #00000010 2px, transparent 2px);
+    background-size: calc(var(--grid) + var(--gap))
+      calc(var(--grid) + var(--gap));
+    background-image: linear-gradient(
+        to right,
+        #00000010 var(--gap),
+        transparent var(--gap)
+      ),
+      linear-gradient(to bottom, #00000010 var(--gap), transparent var(--gap));
   }
+}
+
+.doctor-room,
+.queue {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
 }
 
 .doctor-room {
   grid-column: span 3;
   grid-row: span 2;
-  /* color: black; */
-  display: grid;
-  grid: subgrid;
 
   > .doctor {
-    grid-column: 2;
+    grid-column-start: 2;
   }
 }
 
@@ -66,11 +78,35 @@ body {
   /* background-color: rgb(141, 216, 221); */
 }
 
-.doctor {
+.sprite {
   width: var(--grid);
   height: var(--grid);
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: calc(var(--grid) / 2);
+}
+
+.queue {
+  background-color: white;
+  grid-column: span 8;
+  grid-auto-flow: column;
+  /* overflow: hidden; */
+  /* position: relative; */
+
+  .door--exit {
+    grid-column-start: -1;
+  }
+  /* display: flex; */
+}
+
+.patient-box {
+  position: relative;
+  transition: all 0.2s;
+
+  span {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
