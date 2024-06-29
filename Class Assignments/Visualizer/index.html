@@ -16,44 +16,14 @@
       crossorigin
     ></script>
     <!-- Include eel.js - note this file doesn't exist in the 'web' directory -->
-    <script type="text/javascript" src="/eel.js"></script>
-    <script type="text/javascript" src="/jspy.js"></script>
+    <!-- <script type="text/javascript" src="/eel.js"></script> -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
     <div id="root"></div>
-
-    <script type="text/babel">
-      function DoctorRoom() {
-        return <div>this is doctor room</div>;
-      }
-
-      function Queue() {
-        return <div>this is a queue</div>;
-      }
-      // React Component
-      const App = () => {
-        const [a, setA] = React.useState(12);
-
-        eel.expose(animate_doctor); // Expose this function to Python
-        function animate_doctor(val) {
-          setA(val);
-        }
-
-        return (
-          <div>
-            <DoctorRoom />
-            <DoctorRoom />
-            <DoctorRoom />
-            <Queue />
-            Doctor: {a}
-          </div>
-        );
-      };
-
-      // Render the React Component
-      const root = ReactDOM.createRoot(document.getElementById("root"));
-      root.render(<App />);
-    </script>
+    <script type="text/babel" src="/components/DoctorRoom.js"></script>
+    <script type="text/babel" src="/components/Queue.js"></script>
+    <script type="text/babel" src="/index.js"></script>
   </body>
 </html>
