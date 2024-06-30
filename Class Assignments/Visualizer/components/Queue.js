@@ -1,11 +1,9 @@
-window.Queue = function Queue({ patients }) {
+window.Queue = function Queue({ patients, id }) {
   return (
-    <div className="queue">
-      <img className="sprite door--entry" alt="🚪" />
+    <div className={`queue ${id}`}>
       {patients.map((patient) => {
         return <Patient key={patient.id} {...patient} />;
       })}
-      <img className="sprite door--exit" alt="🚪" />
     </div>
   );
 };

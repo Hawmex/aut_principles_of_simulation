@@ -1,93 +1,113 @@
 function App() {
-  function createDoctorArray(length, keyName) {
+  function getRandomExaminer() {
+    return ["👨🏻‍⚕️", "👨🏼‍⚕️", "👨🏽‍⚕️", "👨🏾‍⚕️", "👨🏿‍⚕️"][Math.floor(Math.random() * 5)];
+  }
+
+  function getRandomPhysician() {
+    return ["👩🏿‍⚕️", "👩🏾‍⚕️", "👩🏽‍⚕️", "👩🏼‍⚕️", "👩🏻‍⚕️"][Math.floor(Math.random() * 5)];
+  }
+
+  function createDoctorArray(length, type) {
     return Array.from({ length: length }, (_, index) => ({
-      id: `${keyName}${index + 1}`,
-      status: "available",
+      id: `${type === "examiner" ? "de" : "dp"}${index + 1}`,
+      status: ["available", "busy"][Math.round(Math.random())],
+      emoji: type === "examiner" ? getRandomExaminer() : getRandomPhysician(),
     }));
   }
 
-  function createQueueArray(length) {
-    return Array.from({ length: length }, (_, index) => ({
-      id: `q${index + 1}`,
-    }));
-  }
-
-  // change with empty array
-  const [examiners, setExaminers] = React.useState(createDoctorArray(4, "de"));
-  const [physicians, setPhysicians] = React.useState(
-    createDoctorArray(6, "dp")
-  );
-  const [queues, setQueues] = React.useState(createQueueArray(3));
   const [patients, setPatients] = React.useState([]);
+  // change with empty array
+  const [examiners, setExaminers] = React.useState(
+    createDoctorArray(7, "examiner")
+  );
+  const [physicians, setPhysicians] = React.useState(
+    createDoctorArray(9, "physician")
+  );
+  const queues = [
+    { id: "qeh" }, //examination_high"
+    { id: "qel" }, //examination_low" },
+    { id: "qt" }, //"reatment" },
+  ];
 
   // eel.expose(initVisualizer);
   function initVisualizer(examinersCount, physiciansCount, queuesCount) {
-    setExaminers(createDoctorArray(examinersCount, "de"));
-    setPhysicians(createDoctorArray(physiciansCount, "dp"));
-    setQueues(createQueueArray(queuesCount));
+    setExaminers(createDoctorArray(examinersCount, "examiner"));
+    setPhysicians(createDoctorArray(physiciansCount, "physician"));
   }
 
-  function addPatient(type = "high-priority") {
+  function createPatient(priority) {
     const newPatients = [
       ...patients,
-      { id: `p${patients.length + 1}`, type: type, location: `q1` },
+      {
+        id: `p${patients.length + 1}`,
+        priority: priority,
+        location: priority === "low" ? "qel" : "qeh",
+      },
     ];
     setPatients(newPatients);
   }
 
-  function movePatient(patientId, destination) {
-    const newPatients = patients.map((patient) =>
-      patient.id === patientId ? { ...patient, location: destination } : patient
-    );
-    setPatients(newPatients);
+  function newPatient(priority) {
+    ReactDOM.flushSync(() => createPatient(priority));
+    animatePatientIn(`p${patients.length + 1}`);
   }
 
-  // animations
-  function animatePatientQueueOut(patientId, queueId) {
-    const patient = document.getElementById(patientId);
-    patient.style.background = "yellow";
-    patient.style.gridColumn = "-1";
-    console.log(patient);
+  // function movePatient(patientId, destination) {
+  //   const newPatients = patients.map((patient) =>
+  //     patient.id === patientId ? { ...patient, location: destination } : patient
+  //   );
+  //   setPatients(newPatients);
+  // }
+
+  function getPatients(location) {
+    return patients.filter((p) => p.location === location);
   }
 
   return (
-    <div className="hospital">
-      {examiners.map((examiner) => {
-        return (
-          <DoctorRoom
-            type="examiner"
-            {...examiner}
-            key={examiner.id}
-            patient={patients.filter((p) => p.location === examiner.id)[0]}
-          />
-        );
-      })}
-      {physicians.map((physician) => {
-        return (
-          <DoctorRoom
-            type="physician"
-            {...physician}
-            key={physician.id}
-            patient={patients.filter((p) => p.location === physician.id)[0]}
-          />
-        );
-      })}
-      {queues.map((queue) => {
-        return (
-          <Queue
-            {...queue}
-            key={queue.id}
-            patients={patients.filter((p) => p.location === queue.id)}
-          />
-        );
-      })}
+    <>
+      <div className="simulator">
+        <div className="hospital">
+          <div className="entry" />
 
-      <button onClick={() => addPatient("low")}>add patient</button>
-      <button onClick={() => animatePatientQueueOut("p2")}>animate</button>
-      {/* <button onClick={() => movePatient("p3", "q2")}>p3 to q2</button> */}
-      {/* <button onClick={() => movePatient("p2", "de2")}>p2 to doctor2</button> */}
-      {/* <p>{JSON.stringify(patients)}</p> */}
-    </div>
+          <Queue {...queues[0]} patients={getPatients("qeh")} />
+          <Queue {...queues[1]} patients={getPatients("qel")} />
+
+          <section className="doctors">
+            {examiners.map((examiner) => {
+              return (
+                <DoctorRoom
+                  type="examiner"
+                  {...examiner}
+                  key={examiner.id}
+                  patient={getPatients(examiner.id)[0]}
+                />
+              );
+            })}
+          </section>
+
+          <Queue {...queues[2]} patients={getPatients("qt")} />
+
+          <section className="doctors">
+            {physicians.map((physician) => {
+              return (
+                <DoctorRoom
+                  type="physician"
+                  {...physician}
+                  key={physician.id}
+                  patient={getPatients(physician.id)[0]}
+                />
+              );
+            })}
+          </section>
+          <div className="exit" />
+        </div>
+      </div>
+      <div className="stats">
+        <button onClick={() => newPatient("low")}>add low</button>
+        <button onClick={() => newPatient("high")}>add high</button>
+        or some other stats here
+      </div>
+    </>
   );
 }
 
