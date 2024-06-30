@@ -10,7 +10,7 @@ function App() {
   function createDoctorArray(length, type) {
     return Array.from({ length: length }, (_, index) => ({
       id: `${type === "examiner" ? "de" : "dp"}${index + 1}`,
-      status: ["available", "busy"][Math.round(Math.random())],
+      status: ["available", "busy"][Math.round(Math.random())], // CHANGE
       emoji: type === "examiner" ? getRandomExaminer() : getRandomPhysician(),
     }));
   }
@@ -18,10 +18,10 @@ function App() {
   const [patients, setPatients] = React.useState([]);
   // change with empty array
   const [examiners, setExaminers] = React.useState(
-    createDoctorArray(7, "examiner")
+    createDoctorArray(2, "examiner")
   );
   const [physicians, setPhysicians] = React.useState(
-    createDoctorArray(9, "physician")
+    createDoctorArray(1, "physician")
   );
   const queues = [
     { id: "qeh" }, //examination_high"
@@ -30,7 +30,7 @@ function App() {
   ];
 
   // eel.expose(initVisualizer);
-  function initVisualizer(examinersCount, physiciansCount, queuesCount) {
+  function initVisualizer(examinersCount, physiciansCount) {
     setExaminers(createDoctorArray(examinersCount, "examiner"));
     setPhysicians(createDoctorArray(physiciansCount, "physician"));
   }
@@ -52,12 +52,12 @@ function App() {
     animatePatientIn(`p${patients.length + 1}`);
   }
 
-  // function movePatient(patientId, destination) {
-  //   const newPatients = patients.map((patient) =>
-  //     patient.id === patientId ? { ...patient, location: destination } : patient
-  //   );
-  //   setPatients(newPatients);
-  // }
+  function movePatient(patientId, destination) {
+    const newPatients = patients.map((patient) =>
+      patient.id === patientId ? { ...patient, location: destination } : patient
+    );
+    setPatients(newPatients);
+  }
 
   function getPatients(location) {
     return patients.filter((p) => p.location === location);
@@ -103,9 +103,12 @@ function App() {
         </div>
       </div>
       <div className="stats">
-        <button onClick={() => newPatient("low")}>add low</button>
-        <button onClick={() => newPatient("high")}>add high</button>
-        or some other stats here
+        <button onClick={() => newPatient("low")}>new low</button>
+        <button onClick={() => newPatient("high")}>new high</button>
+        <button onClick={() => movePatient("p2", "de1")}>move p2 to de1</button>
+        <button onClick={() => movePatient("p2", "qt")}>move p2 to de1</button>
+        <button onClick={() => movePatient("p2", "dp1")}>move p2 to de1</button>
+        and some other stats here
       </div>
     </>
   );

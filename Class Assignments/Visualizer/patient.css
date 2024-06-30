@@ -1,6 +1,6 @@
 .patient-box {
   position: relative;
-  opacity: 0.5; /* initial opacity */
+  /* opacity: 0.5; initial opacity */
 
   span {
     position: absolute;

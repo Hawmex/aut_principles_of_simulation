@@ -1,8 +1,3 @@
-.doctors {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .room {
   display: grid;
   background-repeat: no-repeat;
