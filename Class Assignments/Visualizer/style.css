@@ -21,6 +21,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  flex-direction: column; /* change */
   background-color: rgb(16, 58, 59);
   padding: 5%;
 }
@@ -59,6 +60,12 @@ body {
 }
 
 /* scenery */
+
+.doctors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 .entry,
 .exit {
