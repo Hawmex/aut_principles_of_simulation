@@ -5,35 +5,38 @@
 }
 
 :root {
-  --grid: 56px;
-  --gap: 2px;
+  --grid: 36px;
 }
 
 body {
   height: 100vh;
   width: 100vw;
-  overflow: auto;
+  overflow: hidden;
 }
 
 #root {
   height: 100%;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background-color: rgb(16, 58, 59);
+  padding: 5%;
+}
+
+.simulator {
+  width: calc(var(--grid) * 20);
+  height: 100%;
+  overflow: auto;
+  background-image: url("./assets/tile.jpg");
+  background-attachment: local;
+  border-radius: 4px;
 }
 
 .hospital {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  /* overflow: auto; */
-  background-color: rgb(16, 58, 59);
-  gap: var(--gap);
-}
-
-.section {
   display: flex;
   flex-direction: column;
-  gap: var(--gap);
 }
 
 /* general */
@@ -47,49 +50,26 @@ body {
   font-size: calc(var(--grid) / 2);
 }
 
-/* queues */
-
-.queue {
-  background-color: white;
-  display: flex;
-  width: 400px;
-  justify-content: flex-start;
-  flex-direction: row-reverse;
-
-  .door--entry {
-    margin-right: auto;
-  }
+.queue,
+.doctor-room,
+.sprite,
+.entry,
+.exit {
+  flex-shrink: 0;
 }
 
-/* doctor rooms */
+/* scenery */
 
-.doctor-room {
-  display: grid;
-  grid-template-columns: repeat(3, var(--grid));
-  grid-template-rows: repeat(2, var(--grid));
-
-  > .doctor {
-    grid-column-start: 2;
-  }
+.entry,
+.exit {
+  width: calc(var(--grid) * 20);
+  height: calc(var(--grid) * 5);
 }
 
-.doctor-room--examiner {
-  background-color: rgb(95, 211, 140);
+.entry {
+  background-image: url("./assets/entry.jpg");
 }
 
-.doctor-room--physician {
-  background-color: rgb(105, 182, 172);
-}
-
-/* patients */
-
-.patient-box {
-  position: relative;
-  opacity: 0.5; /* initial opacity */
-
-  span {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
+.exit {
+  background-image: url("./assets/exit.jpg");
 }

@@ -1,16 +1,27 @@
 function App() {
-  function createDoctorArray(length, keyName) {
+  function getRandomExaminer() {
+    return ["👨🏻‍⚕️", "👨🏼‍⚕️", "👨🏽‍⚕️", "👨🏾‍⚕️", "👨🏿‍⚕️"][Math.floor(Math.random() * 5)];
+  }
+
+  function getRandomPhysician() {
+    return ["👩🏿‍⚕️", "👩🏾‍⚕️", "👩🏽‍⚕️", "👩🏼‍⚕️", "👩🏻‍⚕️"][Math.floor(Math.random() * 5)];
+  }
+
+  function createDoctorArray(length, type) {
     return Array.from({ length: length }, (_, index) => ({
-      id: `${keyName}${index + 1}`,
-      status: "available",
+      id: `${type === "examiner" ? "de" : "dp"}${index + 1}`,
+      status: ["available", "busy"][Math.round(Math.random())],
+      emoji: type === "examiner" ? getRandomExaminer() : getRandomPhysician(),
     }));
   }
 
   const [patients, setPatients] = React.useState([]);
   // change with empty array
-  const [examiners, setExaminers] = React.useState(createDoctorArray(4, "de"));
+  const [examiners, setExaminers] = React.useState(
+    createDoctorArray(7, "examiner")
+  );
   const [physicians, setPhysicians] = React.useState(
-    createDoctorArray(1, "dp")
+    createDoctorArray(9, "physician")
   );
   const queues = [
     { id: "qeh" }, //examination_high"
@@ -20,8 +31,8 @@ function App() {
 
   // eel.expose(initVisualizer);
   function initVisualizer(examinersCount, physiciansCount, queuesCount) {
-    setExaminers(createDoctorArray(examinersCount, "de"));
-    setPhysicians(createDoctorArray(physiciansCount, "dp"));
+    setExaminers(createDoctorArray(examinersCount, "examiner"));
+    setPhysicians(createDoctorArray(physiciansCount, "physician"));
   }
 
   function createPatient(priority) {
@@ -53,43 +64,50 @@ function App() {
   }
 
   return (
-    <div className="hospital">
-      <section className="section">
-        <Queue {...queues[0]} patients={getPatients("qeh")} />
-        <Queue {...queues[1]} patients={getPatients("qel")} />
-      </section>
-      <section className="section">
-        {examiners.map((examiner) => {
-          return (
-            <DoctorRoom
-              type="examiner"
-              {...examiner}
-              key={examiner.id}
-              patient={getPatients(examiner.id)[0]}
-            />
-          );
-        })}
-      </section>
-      <section className="section">
-        <Queue {...queues[2]} patients={getPatients("qt")} />
-      </section>
-      <section className="section">
-        {physicians.map((physician) => {
-          return (
-            <DoctorRoom
-              type="physician"
-              {...physician}
-              key={physician.id}
-              patient={getPatients(physician.id)[0]}
-            />
-          );
-        })}
-      </section>
-      <button onClick={() => newPatient("low")}>add low</button>
-      <button onClick={() => newPatient("high")}>add high</button>
+    <>
+      <div className="simulator">
+        <div className="hospital">
+          <div className="entry" />
 
-      {/* <button onClick={() => patientIn("p1", 0, 5)}>animate</button> */}
-    </div>
+          <Queue {...queues[0]} patients={getPatients("qeh")} />
+          <Queue {...queues[1]} patients={getPatients("qel")} />
+
+          <section className="doctors">
+            {examiners.map((examiner) => {
+              return (
+                <DoctorRoom
+                  type="examiner"
+                  {...examiner}
+                  key={examiner.id}
+                  patient={getPatients(examiner.id)[0]}
+                />
+              );
+            })}
+          </section>
+
+          <Queue {...queues[2]} patients={getPatients("qt")} />
+
+          <section className="doctors">
+            {physicians.map((physician) => {
+              return (
+                <DoctorRoom
+                  type="physician"
+                  {...physician}
+                  key={physician.id}
+                  patient={getPatients(physician.id)[0]}
+                />
+              );
+            })}
+          </section>
+          <div className="exit" />
+        </div>
+      </div>
+      <div className="stats">
+        <button onClick={() => newPatient("low")}>add low</button>
+        <button onClick={() => newPatient("high")}>add high</button>
+        or some other stats here
+      </div>
+    </>
   );
 }
 

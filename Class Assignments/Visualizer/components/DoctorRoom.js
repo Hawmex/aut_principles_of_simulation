@@ -1,14 +1,11 @@
-window.DoctorRoom = function DoctorRoom({ id, status, type, patient }) {
+window.DoctorRoom = function DoctorRoom({ id, status, type, patient, emoji }) {
   return (
     <div
-      className={`doctor-room doctor-room--${type}`}
+      className={`room room--${type}`}
       id={id}
       title={`${type} ${id}, ${status}`}
     >
-      <img
-        className="sprite doctor"
-        alt={status === "available" ? "👨🏽‍⚕️" : "💉"}
-      />
+      <img className={`sprite doctor doctor--${status}`} alt={emoji} />
       {patient && <Patient {...patient} />}
     </div>
   );
