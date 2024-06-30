@@ -8,29 +8,41 @@
 .room--examiner {
   background-image: url("./assets/examiner.jpg");
 
-  > .doctor--available {
+  .doctor--available {
     grid-column-start: 3;
     grid-row-start: 3;
     transform: translateY(-6px);
   }
 
-  > .doctor--busy {
+  .doctor--busy {
     grid-column-start: 2;
     grid-row-start: 2;
+  }
+
+  .patient {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    transform: rotate(-90deg) translateY(-12px);
   }
 }
 
 .room--physician {
   background-image: url("./assets/physician.jpg");
 
-  > .doctor--available {
+  .doctor--available {
     grid-column-start: 1;
     grid-row-start: 2;
     transform: translateX(6px);
   }
 
-  > .doctor--busy {
+  .doctor--busy {
     grid-column-start: 3;
     grid-row-start: 2;
+  }
+
+  .patient {
+    grid-column-start: 4;
+    grid-row-start: 2;
+    transform: rotate(180deg) translateY(-6px);
   }
 }

@@ -11,3 +11,9 @@
     background-image: url("./assets/queue-flipped.jpg");
   }
 }
+
+.qeh {
+  .patient {
+    margin-top: auto;
+  }
+}
