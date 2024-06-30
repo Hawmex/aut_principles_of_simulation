@@ -10,7 +10,7 @@ function App() {
   // change with empty array
   const [examiners, setExaminers] = React.useState(createDoctorArray(4, "de"));
   const [physicians, setPhysicians] = React.useState(
-    createDoctorArray(6, "dp")
+    createDoctorArray(1, "dp")
   );
   const queues = [
     { id: "qeh" }, //examination_high"
@@ -25,23 +25,20 @@ function App() {
   }
 
   function createPatient(priority) {
-    const newId = `p${patients.length + 1}`;
     const newPatients = [
       ...patients,
       {
-        id: newId,
+        id: `p${patients.length + 1}`,
         priority: priority,
         location: priority === "low" ? "qel" : "qeh",
       },
     ];
     setPatients(newPatients);
-    return newId;
   }
 
   function newPatient(priority) {
-    const patientId = createPatient(priority);
-    console.log(patientId, "pppps");
-    animatePatientIn(patientId);
+    ReactDOM.flushSync(() => createPatient(priority));
+    animatePatientIn(`p${patients.length + 1}`);
   }
 
   // function movePatient(patientId, destination) {
@@ -57,30 +54,37 @@ function App() {
 
   return (
     <div className="hospital">
-      <Queue {...queues[0]} patients={getPatients("qeh")} />
-      <Queue {...queues[1]} patients={getPatients("qel")} />
-      {examiners.map((examiner) => {
-        return (
-          <DoctorRoom
-            type="examiner"
-            {...examiner}
-            key={examiner.id}
-            patient={getPatients(examiner.id)[0]}
-          />
-        );
-      })}
-      <Queue {...queues[2]} patients={getPatients("qt")} />
-      {physicians.map((physician) => {
-        return (
-          <DoctorRoom
-            type="physician"
-            {...physician}
-            key={physician.id}
-            patient={getPatients(physician.id)[0]}
-          />
-        );
-      })}
-
+      <section className="section">
+        <Queue {...queues[0]} patients={getPatients("qeh")} />
+        <Queue {...queues[1]} patients={getPatients("qel")} />
+      </section>
+      <section className="section">
+        {examiners.map((examiner) => {
+          return (
+            <DoctorRoom
+              type="examiner"
+              {...examiner}
+              key={examiner.id}
+              patient={getPatients(examiner.id)[0]}
+            />
+          );
+        })}
+      </section>
+      <section className="section">
+        <Queue {...queues[2]} patients={getPatients("qt")} />
+      </section>
+      <section className="section">
+        {physicians.map((physician) => {
+          return (
+            <DoctorRoom
+              type="physician"
+              {...physician}
+              key={physician.id}
+              patient={getPatients(physician.id)[0]}
+            />
+          );
+        })}
+      </section>
       <button onClick={() => newPatient("low")}>add low</button>
       <button onClick={() => newPatient("high")}>add high</button>
 

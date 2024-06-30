@@ -23,33 +23,17 @@ body {
 .hospital {
   height: 100%;
   width: 100%;
-  display: grid;
+  display: flex;
+  align-items: center;
   /* overflow: auto; */
-
   background-color: rgb(16, 58, 59);
-  grid-template-columns: repeat(auto-fill, var(--grid));
-  grid-template-rows: repeat(auto-fill, var(--grid));
   gap: var(--gap);
+}
 
-  /* grid lines */
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: calc(-1 * var(--gap));
-    left: calc(-1 * var(--gap));
-    right: 0;
-    bottom: 0;
-    pointer-events: none;
-    background-size: calc(var(--grid) + var(--gap))
-      calc(var(--grid) + var(--gap));
-    background-image: linear-gradient(
-        to right,
-        #00000010 var(--gap),
-        transparent var(--gap)
-      ),
-      linear-gradient(to bottom, #00000010 var(--gap), transparent var(--gap));
-  }
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
 }
 
 /* general */
@@ -63,44 +47,26 @@ body {
   font-size: calc(var(--grid) / 2);
 }
 
-.doctor-room,
-.queue {
-  display: grid;
-  grid-template-columns: subgrid;
-  grid-template-rows: subgrid;
-}
-
 /* queues */
 
 .queue {
   background-color: white;
-  grid-auto-flow: column;
+  display: flex;
+  width: 400px;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
 
-  .door--exit {
-    grid-column-start: -1;
+  .door--entry {
+    margin-right: auto;
   }
-}
-
-.qeh {
-  grid-column: 1 / span 8;
-  grid-row-start: 1;
-}
-
-.qel {
-  grid-column: 1 / span 8;
-  grid-row-start: 2;
-}
-
-.qt {
-  grid-column: 12 / span 8;
-  grid-row-start: 1;
 }
 
 /* doctor rooms */
 
 .doctor-room {
-  grid-column: span 3;
-  grid-row: span 2;
+  display: grid;
+  grid-template-columns: repeat(3, var(--grid));
+  grid-template-rows: repeat(2, var(--grid));
 
   > .doctor {
     grid-column-start: 2;
@@ -108,18 +74,11 @@ body {
 }
 
 .doctor-room--examiner {
-  grid-column: 9 / span 3;
   background-color: rgb(95, 211, 140);
 }
 
 .doctor-room--physician {
-  grid-column: 20 / span 3;
   background-color: rgb(105, 182, 172);
-
-  &:first-child {
-    background-color: yellow;
-  }
-  /* background-color: rgb(141, 216, 221); */
 }
 
 /* patients */
