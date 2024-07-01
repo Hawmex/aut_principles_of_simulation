@@ -3,6 +3,7 @@
 # By Hamed Araab & Shahriar Khalvati
 
 import random
+import time
 from typing import *
 
 
@@ -54,7 +55,7 @@ class SimController:
     - stopTime (float): The time at which the simulation should stop.
     """
 
-    def __init__(self, stopTime: float, initialEvent: SimEvent | None = None) -> None:
+    def __init__(self, stopTime: float, initialEvent: SimEvent | None = None, animate: float | None = None) -> None:
         """
         Initialize the SimController with an initial event and a stop time.
 
@@ -76,6 +77,7 @@ class SimController:
         self.clock: float = 0
 
         self.stopTime = stopTime
+        self.animate = animate
 
         if initialEvent is not None:
             self.dispatchEvent(initialEvent)
@@ -101,6 +103,10 @@ class SimController:
 
         while self.futureEvents[0].dueTime <= self.stopTime:
             upcomingEvent = self.futureEvents.pop(0)
+
+            if self.animate:
+                time.sleep(60 * upcomingEvent.interval * self.animate)
+
             self.clock = upcomingEvent.dueTime
 
             upcomingEvent.trigger()

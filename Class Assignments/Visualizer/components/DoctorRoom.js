@@ -5,8 +5,11 @@ window.DoctorRoom = function DoctorRoom({ id, status, type, patient, emoji }) {
       id={id}
       title={`${type} ${id}, ${status}`}
     >
-      <img className={`sprite doctor doctor--${status}`} alt={emoji} />
-      {patient && <Patient {...patient} />}
+      <img
+        className={`sprite doctor doctor--${patient ? "busy" : "available"}`}
+        alt={emoji}
+      />
+      {patient && <Patient {...patient} key={patient.id} />}
     </div>
   );
 };

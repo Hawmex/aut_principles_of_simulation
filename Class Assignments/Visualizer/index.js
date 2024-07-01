@@ -16,30 +16,25 @@ function App() {
   }
 
   const [patients, setPatients] = React.useState([]);
-  // change with empty array
-  const [examiners, setExaminers] = React.useState(
-    createDoctorArray(2, "examiner")
-  );
-  const [physicians, setPhysicians] = React.useState(
-    createDoctorArray(1, "physician")
-  );
+  const [examiners, setExaminers] = React.useState([]);
+  const [physicians, setPhysicians] = React.useState([]);
   const queues = [
     { id: "qeh" }, //examination_high"
     { id: "qel" }, //examination_low" },
     { id: "qt" }, //"reatment" },
   ];
 
-  // eel.expose(initVisualizer);
+  eel.expose(initVisualizer);
   function initVisualizer(examinersCount, physiciansCount) {
     setExaminers(createDoctorArray(examinersCount, "examiner"));
     setPhysicians(createDoctorArray(physiciansCount, "physician"));
   }
 
-  function createPatient(priority) {
+  function createPatient(priority, id) {
     const newPatients = [
       ...patients,
       {
-        id: `p${patients.length + 1}`,
+        id: id,
         priority: priority,
         location: priority === "low" ? "qel" : "qeh",
       },
@@ -47,11 +42,13 @@ function App() {
     setPatients(newPatients);
   }
 
-  function newPatient(priority) {
-    ReactDOM.flushSync(() => createPatient(priority));
+  eel.expose(newPatient);
+  function newPatient(priority, id) {
+    ReactDOM.flushSync(() => createPatient(priority, id));
     animatePatientIn(`p${patients.length + 1}`);
   }
 
+  eel.expose(movePatient);
   function movePatient(patientId, destination) {
     const newPatients = patients.map((patient) =>
       patient.id === patientId ? { ...patient, location: destination } : patient
@@ -101,14 +98,6 @@ function App() {
           </section>
           <div className="exit" />
         </div>
-      </div>
-      <div className="stats">
-        <button onClick={() => newPatient("low")}>new low</button>
-        <button onClick={() => newPatient("high")}>new high</button>
-        <button onClick={() => movePatient("p2", "de1")}>move p2 to de1</button>
-        <button onClick={() => movePatient("p2", "qt")}>move p2 to de1</button>
-        <button onClick={() => movePatient("p2", "dp1")}>move p2 to de1</button>
-        and some other stats here
       </div>
     </>
   );
